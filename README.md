@@ -17,17 +17,9 @@
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold two to three scrum/check-in meetings with your lab TA/reader at different times in addition to the final demo.
 
 ## Project Description
- > Your project description should summarize the project you are proposing. Be sure to include:
- > * Why is it important or interesting to you?
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- > * What will be the input/output of your project?
- > * What are the features that the project provides?
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
+ >
+ > We have decided to create a RPG that simulates the movie Jurassic Park (1993). This is a movie that everyone in the group has seen and loved, making the project very intresting to work on. As of now, we plan to use C++ on visual studios (as well as github). Our input will be answer to prompts during the game, including character selection, and choices in the adventure. The output will be the plot of the story and the continual outcome based on the user's input. With each "step" of the adventure the user has options to choose from. One may lead them to their death in the game while the other will carry on the game through a set of challenges. Special features include a character selection page where each character has a different plot line which leads each to a different fate. 
  > 
- > We have decided to create a RPG that simulates the movie Jurassic Park (1993). This is a movie that everyone in the group has seen and loved, making the project very intresting to work on. As of now, we plan to use C++ on visual studios (as well as github). Our input will be answer to prompts during the game, including character selection, and choices in the adventure. The output will be the plot of the story and the continual outcome based on the user's input. With each "step" of the adventure the user has options to choose from. One may lead them to their death in the game while the other will carry on the game. Special features include a character selection page where each character has a different plot line. 
- > 
- > 
- > You also need to set up an empty project board using GitHub projects (board view). Make sure you add the board under your project repository. You should also have a Product Backlog and In testing columns added.
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
  > * Create an "Epic" (note) for each feature. Place these epics in the `Product Backlog` column
