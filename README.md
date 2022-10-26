@@ -5,7 +5,11 @@
 
 ## Project Description
  >
- > We have decided to create a RPG that simulates the movie Jurassic Park (1993). This is a movie that everyone in the group has seen and loved, making the project very intresting to work on. As of now, we plan to use C++ on visual studios (as well as github). Our input will be answer to prompts during the game, including character selection, and choices in the adventure. The output will be the plot of the story and the continual outcome based on the user's input. With each "step" of the adventure the user has options to choose from. One may lead them to their death in the game while the other will carry on the game through a set of challenges. Special features include a character selection page where each character has a different plot line which leads each to a different fate. 
+ > * We have decided to create a RPG that simulates the movie Jurassic Park (1993). 
+ > * This is a movie that everyone in the group has seen and loved, making the project very intresting to work on. 
+ > * As of now, we plan to use C++ on visual studios (as well as github). Our input will be answer to prompts during the game, including character selection, and choices in the adventure. 
+ > * The output will be the plot of the story and the continual outcome based on the user's input. With each "step" of the adventure the user has options to choose from. One may lead them to their death in the game while the other will carry on the game through a set of challenges. 
+ > * Special features include a character selection page where each character has a different plot line which leads each to a different fate. 
  > 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
