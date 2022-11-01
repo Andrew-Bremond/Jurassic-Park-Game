@@ -15,6 +15,7 @@
 ## Class Diagram
 <img width="1048" alt="UMLDiagram" src="https://user-images.githubusercontent.com/104599718/199135309-ec63a392-a123-478f-97fb-a19350af6217.png">
 
+>The UML Diagram shows all our classes. The Main class has no job other than to call the other classes. Info has an aggregation relationship to main, it can stand alone without main. Character class also has an aggregation relationship to the Info class. Lastly, each character from the movie has their own class. Here there will be each storyline and this class inherits from the character class in order to use the Dies() and Lives() functions.
  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
