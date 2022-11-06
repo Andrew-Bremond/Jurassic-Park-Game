@@ -18,16 +18,22 @@
 
 
 > The UML Diagram shows all our classes.
+> 
 > Main class:
+> 
 > No job other than to call Story class
+> 
 > Story class:
+> 
 > * Function one: movieDescription() will output the text description of the first half of the movie.
 > * Function two: characterMenu() will output the character selection menu with a list of the playable characters. 
 > * Function three: characterInfo() will output character descriptions to help the user select their character. 
+> 
 > Character class:
 > * Function one: getInfo() output characters job and specialty. 
 > * Function two: dies() output dies message and the option to restart game or quit. Will be called from each inherited class when that player dies.
 > * Function three: lives() will output ending of movie for closure of the game. 
+> 
 > For each person class:
 > Each function will be a scene from the movie, with 4 total scenes per person. Here is where the main coding will be with the storylines written out with user input. 
 
