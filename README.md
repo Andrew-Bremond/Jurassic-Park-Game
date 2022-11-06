@@ -13,10 +13,27 @@
  > 
 
 ## Class Diagram
-<img width="1048" alt="UMLDiagram" src="https://user-images.githubusercontent.com/104599718/199135309-ec63a392-a123-478f-97fb-a19350af6217.png">
 
->The UML Diagram shows all our classes. The Main class has no job other than to call the other classes. Info has an aggregation relationship to main, it can stand alone without main. Character class also has an aggregation relationship to the Info class. Lastly, each character from the movie has their own class. Here there will be each storyline and this class inherits from the character class in order to use the Dies() and Lives() functions.
- 
+![UML Jurrasic Park](https://user-images.githubusercontent.com/104599718/200188446-9a450d11-a293-42f4-bae4-f3ca039b8aec.jpg)
+
+
+> The UML Diagram shows all our classes.
+> Main class:
+> No job other than to call Story class
+> Story class:
+> * Function one: movieDescription() will output the text description of the first half of the movie.
+> * Function two: characterMenu() will output the character selection menu with a list of the playable characters. 
+> * Function three: characterInfo() will output character descriptions to help the user select their character. 
+> Character class:
+> * Function one: getInfo() output characters job and specialty. 
+> * Function two: dies() output dies message and the option to restart game or quit. Will be called from each inherited class when that player dies.
+> * Function three: lives() will output ending of movie for closure of the game. 
+> For each person class:
+> Each function will be a scene from the movie, with 4 total scenes per person. Here is where the main coding will be with the storylines written out with user input. 
+
+
+
+
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
  > * Before the meeting you should perform a sprint plan like you did in Phase I.
