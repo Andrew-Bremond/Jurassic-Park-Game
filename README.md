@@ -35,6 +35,7 @@
 > * Function three: lives() will output ending of movie for closure of the game. 
 > 
 > For each person class:
+> 
 > Each function will be a scene from the movie, with 4 total scenes per person. Here is where the main coding will be with the storylines written out with user input. 
 
 
