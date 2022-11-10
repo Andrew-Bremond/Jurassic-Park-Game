@@ -10,7 +10,7 @@ using namespace std;
 
 class Ellie: public Character{
  public:
-    
+    void setup();
     void sceneOne ();
     void sceneTwo ();
     void sceneThree ();
