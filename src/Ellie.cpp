@@ -21,6 +21,8 @@ void Ellie::sceneOne (){
 
 //sceneTwo starting here
 void Ellie::sceneTwo (){
+//sceneTwo starts here
+//need to add the dies and lives funtion
     int choice1;
     cout << "You just finished turning on the power you're too quick to celebrate and a raptor appears right behind you." 
     << "You run past a fenced door with the raptor right behind your tail. You... \n1.Close the door to try and stop the raptor." 
