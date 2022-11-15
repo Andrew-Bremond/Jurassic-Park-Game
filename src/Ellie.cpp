@@ -14,7 +14,7 @@ void sceneOne (){
 
 
 
-//made it call scene 2();
-//else call dies();
+    //made it call scene2();
+    //else call dies();
     return ;
 }
