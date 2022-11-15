@@ -1,4 +1,8 @@
 #include "header/Character.h"
+#include "header/Ellie.h"
+#include "header/AlanKids.h"
+#include "header/Nedry.h"
+#include "header/IanHammond.h"
 
 #include <string>
 

@@ -39,7 +39,7 @@ void movieDescription(){
     << endl << endl;
     cout << "Here is where our adventure starts: \n";
 
-    CharacterMenu();
+    characterMenu();
     //return;
 }
 
@@ -59,34 +59,62 @@ void movieDescription(){
 
     cin >> input;
 
-    switch (input){
-
-        case 0:
-            //call get info();
-            break;  //break jumps out of rest of switch block
-        case 1:
-            //call Alan and Kids
-            break;
-        case 2:
-            //call ellie
-            break;
-        case 3:
-            //call ian and hammond
-            break;
-        case 4:
-            //call nedry
-            break;
+    if(input == 0)
+    {
+        characterInfo();
+    }
+    else if (input == 1)
+    {
+        AlanKids.setup();
+    }
+    else if(input == 2)
+    {
+        Ellie.setup();
+    }
+    else if(input == 3)
+    {
+        IanHammond.setup();
+    }
+    else if(input == 4)
+    {
+        Nedry.setup();
     }
 
 
     }
     void characterInfo(){
 
-        cout << "Character Info: \n";
+        cout << "Character Info: " << endl;
         cout << endl;
 
-        cout << "Alan Grant and Kids: \n Dr. Alan Grant is a ...";
+        cout << "Alan Grant and Kids: " << endl;
+        cout << "Dr. Alan Grant is a paleontologist who focuses on velociraptors.
+        He becomes trapped on the island, Isla Nublar, with the park owner's grandchildren" << endl;
+        cout << "Tim Murphy is Hammond's grandson who has a knowledge about dinosaurs and is 
+        a quick-thinker when navigating through the park." << endl;
+        cout << "Lex Murphy is Hammond's granddaughter who has computer skills and is easily sacred
+        by all of the dinosaurs" << endl;
+        cout << endl;
 
+        cout << "Ellie Sattler: " << endl;
+        cout << "Dr. Ellie Sattler is a paleobotanist who is an expert on plants. 
+        She is trapped on the island and becomes excited to be there at first." << endl;
+        cout << endl;
+
+        cout << "Ian Malcolm and John Hammond: " << endl;
+        cout << "Dr. Ian Malcolm is a mathematician who specializes in chaos theory. He is 
+        there to make predictions on the consequences of the park with the theory about human
+        interference in nature." << endl;
+        cout << "John Hammond is the owner of Jurassic Park and found the company InGen which
+        created the dinosaurs. He wants to make the park a successful attraction." << endl;
+        cout << endl;
+
+        cout << "Dennis Nedry: " << endl;
+        cout << "Dennis Nedry works for Jurassic Park as the system programmer responsible for 
+        networking the computers. He is a disgruntled worker who hates his job and has financial
+        problems." << endl;
+        cout << endl;
+ 
 
 
 
