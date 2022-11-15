@@ -19,7 +19,8 @@ void Ellie::sceneOne (){
     return ;
 }
 
-//sceneTwo starting here
+//sceneTwo starts here
+//need to add the dies and lives funtion
 void sceneTwo (){
     int choice1;
     cout << "You just finished turning on the power you're too quick to celebrate and a raptor appears right behind you." 
