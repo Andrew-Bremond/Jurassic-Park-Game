@@ -24,7 +24,7 @@ void movieDescription(){
     cout << "Hello! Welcome to our game \"Escape Jurassic Park\"\n";
     cout << "Our adventure starts in the US, where paleontologist "
     << "Alan Grant and paleobotanist Ellie Sattler are diggin up some "
-    << "dinosaur bones. They are visited by Hammond, a rich older man "
+    << "dinosaur bones. They are visited by John Hammond, a rich older man "
     << "who asks them to join him on a trip to his island where he is "
     << "working on a project that he needs their expertise on. After "
     << "agreeing, they are flown to the island and meet chaos theorist "
