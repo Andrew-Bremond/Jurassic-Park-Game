@@ -19,7 +19,7 @@ class Character : public Story{
 public:
     void dies();
     void lives();
-    void getInfo();
+    //void getInfo();
 
 
 };

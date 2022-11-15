@@ -20,7 +20,7 @@ void Ellie::sceneOne (){
 }
 
 //sceneTwo starting here
-void sceneTwo (){
+void Ellie::sceneTwo (){
     int choice1;
     cout << "You just finished turning on the power you're too quick to celebrate and a raptor appears right behind you." 
     << "You run past a fenced door with the raptor right behind your tail. You... \n1.Close the door to try and stop the raptor." 
@@ -101,6 +101,97 @@ void sceneTwo (){
     }
 }
 //sceneTwo ends here
+
+//Scene Three Starts Here
+void Ellie::sceneThree(){
+    int val1;
+    cout << "You turned on the power, however the security system and phone lines are still down. Once you enter the control room you see the raptor trying to break in. Do you…" << endl;
+    cout << "The raptor is still trying to break in by pounding the door. You don't have much time to restore the systems. Do you..." << endl;
+    cout << "1. Work on figuring out how to restore the power to the security system for the park and communication." << endl;
+    cout << "Or" << endl;
+    cout << "2. Help Alan hold down the door as the raptor is trying to get in." << endl;
+    cin >> val;
+    cout << endl;
+
+    if (val1 == 1){
+        int val2;
+        cout << "The raptor is still trying to break in by pounding the door. You don't have much time to restore the systems. Now do you…" << endl;
+        cout << "1. Unplug all of the wires and plug them in again." << endl;
+        cout << "Or" << endl;
+        cout << "2. Click on lots of buttons on the screen." << endl;
+        cin >> val2;
+        cout << endl;
+        if (val2 == 1){
+            cout << "Game Over: The system took too long to load now the dinosaur has eaten you alive." << endl;
+        }
+        else if (val2 == 2){
+            cout << "Game Over: You took too long trying to figure out what to do and the system froze so now the dinosaur has eaten you alive." << endl;
+        }
+    }
+    else if (val1 == 2){
+        cout << "Helping Alan hold down the door prevents the raptor entering for some time." << endl;
+        cout << "Lex recognizes the system while you hold down the door and works on locking the door that you are holding back." << endl;
+        cout << endl;
+
+        int val3;
+        cout << "The raptor knows how to open doors and its force is becoming too much to handle. Do you..." << endl;
+        cout << "1. Keep on hold back the door until the security system for the door is activated." << endl;
+        cout << "Or" << endl;
+        cout << "2. Try to reach for the gun on the floor a couple feet away from you." << endl;
+        cin >> val3;
+        cout << endl;
+
+        if (val3 == 2){
+            int val4;
+            cout << "You grabbed the weapon but the door is unsteady. Now do you..." << endl;
+            cout << "1. Let the door open a bit to shoot the raptor." << endl;
+            cout << "Or" << endl;
+            cout << "2. Shoot the raptor through the glass window on the door." << endl;
+            cin >> val4;
+            cout << endl;
+            if (val4 == 1){
+                cout << "Game Over: The raptor moves much faster than you and enters the room then attacks you." << endl;
+            }
+            else if (val4 == 2){
+                cout << "Game Over: You missed the raptor and glass has shattered so the raptor comes into the room and attacks you." << endl;
+            }
+        }
+        else if (val3 == 1){
+            cout << "Lex is able to lock the doors in time for you to escape." << endl;
+            cout << "The system is successfully rebooted." << endl;
+            cout << endl;
+
+            int val5;
+            cout << "The raptor figures out the doors are locked and cannot go through that way. So, they run through the glass. Do you..." << endl;
+            cout << "1. Run and around the room and exit through the door." << endl;
+            cout << "Or" << endl;
+            cout << "2. Take the ladder in the room to escape through the vents" << endl;
+            cin >> val5;
+            cout << endl;
+
+            if (val5 == 1){
+                int val6;
+                cout << "You escape the raptor for now. Now do you..." << endl;
+                cout << "1. Look for a room to hide in until help arrives." << endl;
+                cout << "Or" << endl;
+                cout << "2. Run around looking for the safe room." << endl;
+                cin >> val6;
+                cout << endl;
+                if (val6 == 1){
+                    cout << "Game Over: The raptor finds you in the room and tears you apart." << endl;
+                }
+                else if (val6 == 2){
+                    cout << "Game Over: The raptor corners you and throws you around." << endl;
+                }
+            }
+            else if (val5 == 2){
+                cout << "You, Alan, and the kids are in the vents. However, both raptors are now after you." << endl;
+                cout << "The raptors are still on your tail." << endl;
+            }
+        }
+    }
+}
+//Scene Three Ends Here
 
 // Scene Four Starts Here
 void Ellie::sceneFour(){
