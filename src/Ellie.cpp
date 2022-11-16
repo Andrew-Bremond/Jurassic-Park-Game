@@ -4,7 +4,7 @@
 
 void Ellie::setup(){
     cout << "You've chosen Dr. Ellie Sattler!\n";
-    cout << "\n after staying behind with the sick dinosaur to "
+    cout << "\n after staying behind with the sick dinosaur to ";
 
     sceneOne();
 }

@@ -2,7 +2,7 @@
 #include<iostream>
 #include <string>
 #include "Character.h"
-#include "../main.cpp"
+//#include "../main.cpp"
 
 using namespace std;
 

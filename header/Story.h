@@ -1,5 +1,5 @@
-#include "Character.h"
-#include "Ellie.h"
+//#include "Character.h"
+//#include "Ellie.h"
 // #include "header/AlanKids.h"
 // #include "header/Nedry.h"
 // #include "header/IanHammond.h"
