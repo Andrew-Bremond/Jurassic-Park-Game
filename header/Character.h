@@ -1,10 +1,10 @@
 //character.h file
 
-#include "header/Ellie.h"
-#include "header/AlanKids.h"
-#include "header/Nedry.h"
-#include "header/IanHammond.h"
-#include "header/Story.h"
+#include "Ellie.h"
+// #include "header/AlanKids.h"
+// #include "header/Nedry.h"
+// #include "header/IanHammond.h"
+#include "Story.h"
 
 
 #include <string>

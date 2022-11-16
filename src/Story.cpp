@@ -1,4 +1,6 @@
 //story.cpp
+#include "../header/Story.h"
+
 void intro(){
     cout << "WELCOME to Jurassic Park! \n";
     cout << "\n Enter 'S' to start the game\n";

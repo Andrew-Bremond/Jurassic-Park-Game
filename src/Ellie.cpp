@@ -1,12 +1,12 @@
 //Ellie.cpp
-#include "header/Ellie.h"
+#include "../header/Ellie.h"
 
 
 void Ellie::setup(){
     cout << "You've chosen Dr. Ellie Sattler!\n";
     cout << "\n after staying behind with the sick dinosaur to "
 
-    //sceneOne();
+    sceneOne();
 }
 
 
@@ -108,7 +108,7 @@ void Ellie::sceneOne(){
             else if (input5 == 2){
                 cout << "You go into the jeep and see Ian yelling at you, you hear the T-rex "
                 << "before you see it. You jump into the car with Ian and Muldoon and drive to safety.\n";
-                //call lives()
+                sceneTwo();
             }
         }
     }

@@ -1,7 +1,8 @@
 //Ellie.h
-
+#include<iostream>
 #include <string>
-#include "header/Character.h"
+#include "Character.h"
+#include "../main.cpp"
 
 using namespace std;
 
