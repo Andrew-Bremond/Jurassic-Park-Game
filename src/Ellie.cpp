@@ -1,6 +1,9 @@
 //Ellie.cpp
 #include "../header/Ellie.h"
 
+Ellie::Ellie(){
+
+}
 
 void Ellie::setup(){
     cout << "You've chosen Dr. Ellie Sattler!\n";
@@ -182,7 +185,7 @@ void Ellie::sceneTwo (){
         }
     }
     else if (choice1 == 3) {
-        choice2;
+        int choice2;
         cout << "You've been going the gym lately, and you think you can win this. You decide to swing first. \n"
         << "1. You swing for the head. \n2. You aim for the legs." << endl;
         cin >> choice2;
@@ -208,7 +211,7 @@ void Ellie::sceneThree(){
     cout << "1. Work on figuring out how to restore the power to the security system for the park and communication." << endl;
     cout << "Or" << endl;
     cout << "2. Help Alan hold down the door as the raptor is trying to get in." << endl;
-    cin >> val;
+    cin >> val1;
     cout << endl;
 
     if (val1 == 1){
