@@ -1,6 +1,9 @@
 //Ellie.cpp
 #include "../header/Ellie.h"
 
+Ellie::Ellie(){
+
+}
 
 void Ellie::setup(){
     cout << "You've chosen Dr. Ellie Sattler!\n";
