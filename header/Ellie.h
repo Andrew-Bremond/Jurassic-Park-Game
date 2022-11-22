@@ -11,6 +11,7 @@ using namespace std;
 
 class Ellie: public Character{
  public:
+    Ellie();
     void setup();
     void sceneOne ();
     void sceneTwo ();

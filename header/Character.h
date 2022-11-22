@@ -16,6 +16,7 @@ using namespace std;
 
 
 class Character : public Story{
+
 public:
     void dies();
     void lives();
