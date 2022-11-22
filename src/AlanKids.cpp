@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //Alan and the kids file for code
 #include "../header/AlanKids.h"
 
@@ -10,6 +9,108 @@ void AlanKids::setup(){
     cout << "You've chosen Dr. Alan Grant, Lex, and Tim!\n";
 
     sceneOne();
+}
+
+void AlanKids::sceneOne(){
+    int input1; 
+    cout << "You and the kids are in the broken down Jeeps. As you wait for the power to "
+    "come on, you hear the sounds of giant footsteps. Suddenly you see the T-rex and he breaks through the electric fence. Do you. . ." << endl;
+    cout << "1. Stay in the car." << endl;
+    cout << "Or" << endl;
+    cout << "2. Get out of the car to try and quickly fix the car." << endl;
+    cout << "Or" << endl;
+    cout << "3. Follow the lawyer, Mr. Gennaro, to the bathroom and try and get safety." << endl;
+    cin >> input1; 
+    cout << " \n------------------------------\n";
+    cout << endl;
+
+    if(input1 == 1){
+        int input2;
+        cout << "You stay in the car even after the lawyer abandons "
+        "you to save himself. The T-rex looks around the cars to try and understand his new environment. Do you. . ." << endl;
+        cout << "1. Shine a bright flashlight to try and scare the T-rex off." << endl;
+        cout << "Or" << endl;
+        cout << "2. Stay absolutely still." << endl;
+        cin >> input2;
+        cout << " \n------------------------------\n";
+        cout << endl;
+
+        if(input2 == 1){
+            int input3; 
+            cout << "The bright light of the flashlight causes the T-rex to come over to you. Do you. . ." << endl;
+            cout << "1. Turn the light off and run out of the car to try and get to safety." << endl;
+            cout << "Or" << endl;
+            cout << "2. Shine the light in the dinosaurs' eyes in an attempt to blind him." << endl;
+            cin >> input3; 
+            cout << " \n------------------------------\n";
+            cout << endl;
+            
+            if(input3 == 1){
+                cout << "Game Over: The T-rex walks over to you and quickly and effortlessly pops you in his mouth to never be seen again." << endl;
+            }
+            else if(input3 == 2){
+                cout << "Game Over: This attempt to blind a dinosaur was really innefective and resulted in death" << endl;
+            }
+        }
+        else if (input2 == 2){
+            int input4;
+            cout << "The T-rex senses movement so by staying still the T-rex didn't see you. " 
+            "However the kids weren't as smart and got the T-rex chasing after them. Do you. . ." << endl;
+            cout << "1. Save the kids and escape from the outside of the road." << endl;
+            cout << "Or" << endl;
+            cout << "2. Leave the scene with Ian and try and make a rescue call to try and save the kids." << endl;
+            cin >> input4;
+            cout << " \n------------------------------\n";
+            cout << endl;
+
+            if(input4 == 1){
+                cout << "You make the heroic decision to put the kids life before your own and save them successfully. "
+                "The car is thrown off road by the T-rex and you escape down from the road. " << endl;
+                sceneTwo();
+            }
+            else if(input4 == 2){
+                cout << "Game Over: Your selfishness blinded you from making the correct decisions. "
+                "The T-rex ate you as you made rash-jerky movements in your escape. " << endl;
+            }
+        }
+    }
+    else if(input1 == 2){
+        int input5;
+        cout << "You creep out of the car and pop the hood You look around to see what the problem is with the car. "
+        "The T-rex pauses and looks around his new environment. Do you. . ." << endl;
+        cout << "1. Try and quickly diagnose the problem with the cars and fix it." << endl;
+        cout << "Or" << endl;
+        cout << "2. Book it out of there as fast as you can." << endl;
+        cin >> input5;
+        cout << " \n------------------------------\n";
+        cout << endl;
+
+        if(input5 == 1){
+            cout << "Game Over: Trying to fix a car is not the smartest decision when a hungry T-rex is mere yards away. Death by T-rex." << endl;
+        }
+        else if(input5 == 2){
+            cout << "Game Over: The T-rex senses movement. Your running made the T-rex run after you and eat you up as a snack." << endl;
+        }
+    }
+    else if(input1 == 3){
+        int input6;
+        cout << "You and the lawyer are hiding in the bathroom. Suddenly you hear running. "
+        "The sounds of the T-rex are getting scarily loud. Do you. . ." << endl;
+        cout << "1. Escape the bathroom from the entrance you came in from." << endl;
+        cout << "Or" << endl;
+        cout << "2. Hope the T-rex avoids the bathroom and continues on its path." << endl;
+        cin >> input6;
+        cout << " \n------------------------------\n";
+        cout << endl;
+
+        if(input6 == 1){
+            cout << "Game Over: You run out of the bathroom straight into the wide open jaws of a hungry T-rex." << endl;
+        }
+        else if(input6 == 2){
+            cout << "Game Over: The T-rex decided to check out the bathroom. He rips off the roof and sees you guys. "
+            "He eats you and becomes satisfied by his meal. " << endl;
+        }
+    }
 }
 
 void AlanKids::sceneFour(){
