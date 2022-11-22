@@ -1,5 +1,5 @@
 //Ellie.h
-#include<iostream>
+#include <iostream>
 #include <string>
 #include "Character.h"
 //#include "../main.cpp"

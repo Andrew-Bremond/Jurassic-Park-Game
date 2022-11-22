@@ -1,5 +1,6 @@
 //story.cpp
 #include "../header/Story.h"
+#include <iostream>
 
 void intro(){
     cout << "WELCOME to Jurassic Park! \n";
