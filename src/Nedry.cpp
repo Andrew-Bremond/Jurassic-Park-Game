@@ -12,7 +12,7 @@ void Nedry::setup(){
 
 void Nedry::sceneOne(){
     int val1;
-    cout << "You have financial issues and are dissatisfied at your job. So, when a rival company reaches out to him to steal dinosaur embryos he agrees. The weather has turned for the worse as a storm approaches and the boat is leaving soon. In order to steal the embryos you must turn off the security system." << endl;
+    cout << "You have financial issues and are dissatisfied at your job. So, when a rival company reaches out to you to steal dinosaur embryos you agree. The weather has turned for the worse as a storm approaches and the boat is leaving soon that would take you and the embryos to safety. In order to steal the embryos you must turn off the security system." << endl;
     cout << "You need to turn off the security system in the cold storage room without anyone knowing what you are doing. Do you…" << endl;
     cout << "1. Say that you are finished with your work." << endl;
     cout << "Or" << endl;
@@ -31,10 +31,10 @@ void Nedry::sceneOne(){
         cout << " \n------------------------------\n";
         cout << endl;
         if (val2 == 1){
-            cout << "Game Over: You took too long, the baby dinosaurs find you and eat you alive." << endl;
+            cout << "Game Over: You took too long buying snacks to cover yourself, the boat left before you even got a chance to get the embryos." << endl;
         }
         else if (val2 == 2){
-            cout << "Game Over: You tripped before you got to the room and the baby dinosaurs found you and ate you alive." << endl;
+            cout << "Game Over: You aren't as fast as you think and your coworkers watch you go into the cold starage room and arrest you." << endl;
         }
     }
     else if (val1 == 2){
@@ -43,7 +43,7 @@ void Nedry::sceneOne(){
         cout << endl;
 
         int val3;
-        cout << "You are walking towards the room. The rooms all look the same and forget where the embryos are stored. Do you…" << endl;
+        cout << "You are walking towards the room. The rooms all look the same and you forget where the embryos are stored. Do you…" << endl;
         cout << "1. Keep on walking." << endl;
         cout << "Or" << endl;
         cout << "2. Go back to your desk and find a map." << endl;
@@ -76,30 +76,31 @@ void Nedry::sceneOne(){
             cout << "You finally make it and find the embryos. Now, you must take all of the embryos so you enter the room. Do you…" << endl;
             cout << "1. Stuff them in your pockets as there is no time before the boat leaves." << endl;
             cout << "Or" << endl;
-            cout << "2. Take all of the embryos and place them in a container." << endl;
+            cout << "2. Take all of the embryos and place them in a shaving cream bottle container." << endl;
             cin >> val5;
             cout << " \n------------------------------\n";
             cout << endl;
 
             if (val5 == 1){
                 int val6;
-                cout << "You escape the raptor for now. Now do you..." << endl;
-                cout << "1. Head back to the lab with your extra time to grab dinosaur eggs." << endl;
+                cout << "You have the embryos in your pockets. Now do you..." << endl;
+                cout << "1. Head back to the lab with your extra time to finalize your cover." << endl;
                 cout << "Or" << endl;
                 cout << "2. Start speed walking towards the exit." << endl;
                 cin >> val6;
                 cout << " \n------------------------------\n";
                 cout << endl;
                 if (val6 == 1){
-                    cout << "Game Over: The eggs break and the embryos all fall out of your pocket. Security finds you." << endl;
+                    cout << "Game Over: The eggs break during your walk back and the embryos all fall out of your pocket. Security finds you." << endl;
                 }
                 else if (val6 == 2){
-                    cout << "Game Over: It's too late dinosaurs are in the building and eat you alive." << endl;
+                    cout << "Game Over: It's too late and dinosaurs are now in the building. They eat you alive." << endl;
                 }
             }
             else if (val5 == 2){
-                cout << "So, now you head outside towards the cars to head towards the dock." << endl;
-                cout << "The storm is becoming stronger and stronger." << endl;
+                cout << "Congrats, you were able to grab the embryos in time to still maybe make the boat!" << endl;
+                cout << " Be careful though, the storm is becoming stronger and stronger." << endl;
+                //call sceneTwo();
             }
         }
     }
