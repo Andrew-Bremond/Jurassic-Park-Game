@@ -19,6 +19,7 @@ void AlanKids::sceneFour(){
     cout << "Or" << endl;
     cout << "2. Start screaming and yelling for help." << endl;
     cin >> val1;
+    cout << "\n------------------------------\n";
     cout << endl;
 
     if (val1 == 2){
@@ -28,6 +29,7 @@ void AlanKids::sceneFour(){
         cout << "Or" << endl;
         cout << "2. Make a run for it and try to." << endl;
         cin >> val2;
+        cout << "\n------------------------------\n";
         cout << endl;
         if (val2 == 1){
             cout << "Game Over: This angers the raptor even more and starts attacking you." << endl;
@@ -47,6 +49,7 @@ void AlanKids::sceneFour(){
         cout << "Or" << endl;
         cout << "2. Find a storage cabinet in the kitchen and hide." << endl;
         cin >> val3;
+        cout << "\n------------------------------\n";
         cout << endl;
 
         if (val3 == 2){
@@ -56,6 +59,7 @@ void AlanKids::sceneFour(){
             cout << "Or" << endl;
             cout << "2. Throw the pots and pans at the raptors." << endl;
             cin >> val4;
+            cout << "\n------------------------------\n";
             cout << endl;
             if (val4 == 1){
                 cout << "Game Over: You are unable to defend yourself and are eaten to bits." << endl;
@@ -75,6 +79,7 @@ void AlanKids::sceneFour(){
             cout << "Or" << endl;
             cout << "2. See the open freezer and lure a raptor towards it." << endl;
             cin >> val5;
+            cout << "\n------------------------------\n";
             cout << endl;
 
             if (val5 == 1){
@@ -84,6 +89,7 @@ void AlanKids::sceneFour(){
                 cout << "Or" << endl;
                 cout << "2. Look for an exit." << endl;
                 cin >> val6;
+                cout << "\n------------------------------\n";
                 cout << endl;
                 if (val6 == 1){
                     cout << "Game Over: The raptors know how to open doors so they catch up and attack you." << endl;
