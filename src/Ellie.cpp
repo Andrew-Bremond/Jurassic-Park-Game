@@ -15,7 +15,7 @@ void Ellie::sceneOne(){
     int input1;
     cout << "You stayed behind with the sick dinosaur to check out its poop. "
     << "When you are done you head back to the headquarters to wait for the others "
-    << "that went on to finish the tour. When they don’t come back and a storm "
+    << "that went on to finish the tour. When they don't come back and a storm "
     << "appears, you want to go and help. The power is out and the dinosaur fences "
     << "are down, do you…" << endl;
 
@@ -182,7 +182,7 @@ void Ellie::sceneTwo (){
         }
     }
     else if (choice1 == 3) {
-        choice2;
+        int choice2;
         cout << "You've been going the gym lately, and you think you can win this. You decide to swing first. \n"
         << "1. You swing for the head. \n2. You aim for the legs." << endl;
         cin >> choice2;
@@ -208,7 +208,7 @@ void Ellie::sceneThree(){
     cout << "1. Work on figuring out how to restore the power to the security system for the park and communication." << endl;
     cout << "Or" << endl;
     cout << "2. Help Alan hold down the door as the raptor is trying to get in." << endl;
-    cin >> val;
+    cin >> val1;
     cout << endl;
 
     if (val1 == 1){
