@@ -1,7 +1,6 @@
 //story.cpp
 #include "../header/Story.h"
-#include "../header/Character.h"
-#include "../header/Ellie.h"
+
 #include <iostream>
 
 // void Story::movieDescription();

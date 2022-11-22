@@ -22,6 +22,9 @@ void Ellie::sceneOne(){
     << "appears, you want to go and help. The power is out and the dinosaur fences "
     << "are down, do you…" << endl;
 
+    cout << "1. Stay inside where is is nice and warm\n";
+    
+    cin << input1;
     //option one choice:
     if (input1 == 1){
         int input2;
