@@ -1,14 +1,14 @@
 //Ellie.cpp
 #include "../header/Ellie.h"
+#include <iostream>
 
 Ellie::Ellie(){
 
 }
 
 void Ellie::setup(){
-    cout << "You've chosen Dr. Ellie Sattler!\n";
-    cout << "\n after staying behind with the sick dinosaur to ";
-
+    cout << "You've chosen Dr. Ellie Sattler!" << endl;
+    cout << endl;
     sceneOne();
 }
 
@@ -16,42 +16,35 @@ void Ellie::setup(){
 
 void Ellie::sceneOne(){
     int input1;
-    cout << "You stayed behind with the sick dinosaur to check out its poop. "
-    << "When you are done you head back to the headquarters to wait for the others "
-    << "that went on to finish the tour. When they don’t come back and a storm "
-    << "appears, you want to go and help. The power is out and the dinosaur fences "
-    << "are down, do you…" << endl;
+    cout << "You stayed behind with the sick dinosaur to check out its poop." << endl;
+    cout << "When you are done you head back to the headquarters to wait for the others that went on to finish the tour." << endl;
+    cout << "When they don't come back and a storm appears, you want to go and help." << endl;
+    cout << "The power is out and the dinosaur fences are down, do you…" << endl;
 
     //option one choice:
     if (input1 == 1){
         int input2;
-        cout << "You stay inside and watch the storm continue on. Theres no "
-        << "sign of it calming down so you decide to… " << endl;
-        cout << "1. Go out in a jeep yourself and try to find the others from the tour.\n";
-        cout << "Or\n";
-        cout << "2. Go onto the roof with binoculars to try and see the others. \n";
+        cout << "You stay inside and watch the storm continue on. Theres no sign of it calming down so you decide to… " << endl;
+        cout << endl;
+        cout << "1. Go out in a jeep yourself and try to find the others from the tour." << endl;
+        cout << "Or" << endl;
+        cout << "2. Go onto the roof with binoculars to try and see the others." << endl;
         cin >> input2;
         cout << endl;
         if (input2 == 1){
-            cout << "Game Over: you waited too long and the jeep is stuck "
-            << "in deep mud from the rain, youre trying to get the jeep out of "
-            << "the mud when a Dilophosaurus sees you and hunts you down. Its venom kills you!\n";
-            //call dies()
+            cout << "Game Over: you waited too long and the jeep is stuck in deep mud from the rain, youre trying to get the jeep out of the mud when a Dilophosaurus sees you and hunts you down. Its venom kills you!" << endl;
         }
         else if (input2 == 2){
-            cout << "Game Over: While on the roof trying to see over the tree tops of the jungle, "
-            << "the storm picks up. It is attracted to the tallest thing with metal and strikes "
-            << "you and the binoculars!\n";
-            //call dies()
+            cout << "Game Over: While on the roof trying to see over the tree tops of the jungle, the storm picks up. It is attracted to the tallest thing with metal and strikes you and the binoculars!" << endl;
         }
     } //option two choice:
     else if (input1 == 2){
-        cout << "You arrive at the T-rex enclosure where the tour was last seen. "
-        << "Its a wreck, the fence is torn, the cars are ripped apart, and it is "
-        << "STILL dumping rain.\n" << endl;
+        cout << "You arrive at the T-rex enclosure where the tour was last seen." << endl;
+        cout << "Its a wreck, the fence is torn, the cars are ripped apart, and it is STILL dumping rain." << endl;
 
         int input3;
         cout << "You realise you have two choices. What do you pick?" << endl;
+        cout << endl;
         cout << "1. Look in the jeep wreckage on the road by the T-rex enclosure." << endl;
         cout << "Or" << endl;
         cout << "2. Walk down the road in hopes of finding Alan and the others nearby hiding and waiting. \n";
@@ -60,57 +53,53 @@ void Ellie::sceneOne(){
 
         if (input3 == 2){
             int input4;
-            cout << "You walk down the road for a bit and see a wrecked outhouse as "
-            << " you walk. Suddenly the floor begins to shake from some dinosaur around "
-            << "the corner. Do you... \n";
+            cout << "You walk down the road for a bit and see a wrecked outhouse as you walk." << endl;
+            cout << "Suddenly the floor begins to shake from some dinosaur around the corner. Do you..." << endl;
+            cout << endl;
             cout << "1. Turn and run back the way you came." << endl;
             cout << "Or" << endl;
             cout << "2. Run into the jungle off the path and hide in the bushes." << endl;
             cin >> input4;
             cout << endl;
             if (input4 == 1){
-                cout << "Game Over: The t-rex was making the sound and got your scent. "
-                << "Sorry but you’re its next snack! \n";
+                cout << "Game Over: The t-rex was making the sound and got your scent. Sorry but you're its next snack!" << endl;
             }
             else if (input4 == 2){
-                cout << "Game Over: The t-rex isnt the only dangerous dinosaurs at the "
-                << "park. The Dilong dinosaur was right behind the bush and waited "
-                << "for you to sit down before taking a big bite!\n";
+                cout << "Game Over: The t-rex isnt the only dangerous dinosaurs at the park. The Dilong dinosaur was right behind the bush and waited for you to sit down before taking a big bite!" << endl;
             }
         }
         else if (input3 == 1){
-            cout << "You look in the jeep, no sign of Alan but there are foot prints "
-            << "along with children footprints, they must be Hammond’s grandchildren. You hear "
-            << "yelling from behind you on the road. \n";
+            cout << "You look in the jeep, no sign of Alan but there are foot prints along with children footprints, they must be Hammond's grandchildren." << endl;
+            cout << "You hear yelling from behind you on the road." << endl;
             cout << "From here do you..." << endl;
             cout << endl;
 
             int input5;
-            cout << "1. Go back up to the jeep to see what is happening.\n";
+            cout << "1. Go back up to the jeep to see what is happening." << endl;
             cout << "Or" << endl;
-            cout << "2. Continue into jungle following the steps ignoring the yells. \n";
+            cout << "2. Continue into jungle following the steps ignoring the yells." << endl;
             cin >> input5;
             cout << endl;
 
             if (input5 == 2){
                 int input6;
-                cout << "The foot steps take you further into the bush when you hear a "
-                << "noise like someone walking. Do you... \n";
-                cout << "1. Run towards the noise (It might be Alan!).\n";
-                cout << "Or\n";
-                cout << "2. Call out for Alan\n";
+                cout << "The foot steps take you further into the bush when you hear a noise like someone walking. Do you..." << endl;
+                cout << endl;
+                cout << "1. Run towards the noise (It might be Alan!)." << endl;
+                cout << "Or" << endl;
+                cout << "2. Call out for Alan" << endl;
                 cin >> input6;
                 cout << endl;
                 if (input6 == 1){
-                    cout << "Game Over: That was not alan. You just ran into the raptors. Thanks for feeding them!\n";
+                    cout << "Game Over: That was not alan. You just ran into the raptors. Thanks for feeding them!" << endl;
                 }
                 else if (input6 == 2){
-                    cout << "Game Over: Dinosaurs have ears - and sharp fangs. You run into some and never come out \n";
+                    cout << "Game Over: Dinosaurs have ears - and sharp fangs. You run into some and never come out." << endl;
                 }
             }
             else if (input5 == 2){
-                cout << "You go into the jeep and see Ian yelling at you, you hear the T-rex "
-                << "before you see it. You jump into the car with Ian and Muldoon and drive to safety.\n";
+                cout << "You go into the jeep and see Ian yelling at you, you hear the T-rex before you see it." << endl;
+                cout << "You jump into the car with Ian and Muldoon and drive to safety." << endl;
                 sceneTwo();
             }
         }
@@ -123,9 +112,11 @@ void Ellie::sceneTwo (){
 //sceneTwo starts here
 //need to add the dies and lives funtion
     int choice1;
-    cout << "You just finished turning on the power you're too quick to celebrate and a raptor appears right behind you." 
-    << "You run past a fenced door with the raptor right behind your tail. You... \n1.Close the door to try and stop the raptor." 
-    << "\n2. Focus on running ahead to try and outrun the raptor. \n3. Grab a nearby wrench and fight 1 on 1 with the raptor." << endl;
+    cout << "You just finished turning on the power you're too quick to celebrate and a raptor appears right behind you." << endl;
+    cout << "You run past a fenced door with the raptor right behind your tail. You..." << endl; 
+    cout << "1.Close the door to try and stop the raptor." << endl;
+    cout << "2. Focus on running ahead to try and outrun the raptor." << endl;
+    cout << "3. Grab a nearby wrench and fight 1 on 1 with the raptor." << endl;
     cin >> choice1;
     cout << endl;
 
@@ -360,7 +351,7 @@ void Ellie::sceneFour(){
     }
     else if(input1 == 2){
         int input5;
-        cout << "You run for 100 yards down the vent until you reach a large spinning fan. You can’t get through. Do you . . ." << endl;
+        cout << "You run for 100 yards down the vent until you reach a large spinning fan. You can't get through. Do you . . ." << endl;
         cout << "1. Turn around and try and hed back to the previous vent." << endl;
         cout << "Or" << endl;
         cout << "2. Run through the fan and take your chances with physics." << endl;
