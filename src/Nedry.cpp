@@ -104,3 +104,86 @@ void Nedry::sceneOne(){
         }
     }
 }
+
+void Nedry::sceneFour(){
+    int input1; 
+    cout << "You crashed your car while not staying focused on the road. "
+    "All by yourself how will you survive and bring the eggs back. Do you. . ." << endl;
+    cout << "1. Get out of the car and use the winch to try and unstuck the Jeep." << endl;
+    cout << "Or" << endl;
+    cout << "2. Stay in the car and wait for potential help to show up." << endl;
+    cin >> input1; 
+    cout << " \n------------------------------\n";
+    cout << endl;
+
+    if(input1 == 1){
+        int input2; 
+        cout << "You climb out of the Jeep and grab the winch. While trying to tie the winch "
+        "around a large tree you spot a solo dinosaur. Do you. . . " << endl;
+        cout << "1. Fight the dinosaur" << endl;
+        cout << "Or" << endl;
+        cout << "2. Try and calmly walk away from the dinosaur back to your vehicle." << endl;
+        cin >> input2; 
+        cout << " \n------------------------------\n";
+        cout << endl;
+
+        if(input2 == 1){
+            int input3;
+            cout << "You square up towards the dinosaur ready for a fight. "
+            "Next to you, you see the winch and a large wooden stick. How do you defend yourself? Do you. . ." << endl;
+            cout << "1. Grab the winch and use it as a whip." << endl;
+            cout << "Or" << endl;
+            cout << "2. Use the large stick as a baton." << endl;
+            cin >> input3;
+            cout << " \n------------------------------\n";
+            cout << endl;
+
+            if(input3 == 1){
+                cout << "Game Over: You, even with a weapon, are no competition for a dinosaur. "
+                "He spits on your face and you die painfully." << endl;
+            }
+            else if(input3 == 2){
+                cout << "Game Over: You, even with a weapon, are no competition for a dinosaur. "
+                "He spits on your face and you die painfully." << endl;
+            }
+        }
+        else if(input2 == 2){
+            int input4; 
+            cout << "You try and act unafraid of the dinosaur. You quickly, but calmly walk towards your vehicle. "
+            "However, when you look back, the dinosaur quietly caught up to you. Do you. . ." << endl;
+            cout << "1. Grab a stick and attempt to throw it as a distraction to the dinosaur." << endl;
+            cout << "Or" << endl;
+            cout << "2. Run as fast as you can from the dinosaur." << endl;
+            cin >> input4;
+            cout << " \n------------------------------\n";
+            cout << endl;
+
+            if(input4 == 1){
+                cout << "Game Over: the dinosaur is not a dog and didn't fall for your trick. "
+                "Instead it spits acid like liquid on your face. He blinds you and kills you." << endl;
+                cout << "Though this is what happens in the movie, stealing is never "
+                "tolerated and punishment will be inflicted - by dinos" << endl;
+            }
+            else if(input4 == 2){
+                cout << "Game Over: You trigger the dinosaurs' predatory instincts and he chases you down and rips out your neck." << endl;
+            }
+        }
+    }
+    else if(input1 == 2){
+        int input5;
+        cout << "You stayed in the car for several hours now with no sign of the storm letting up or help coming. Do you. . ." << endl;
+        cout << "1. Get out and look for help by going back." << endl;
+        cout << "Or" << endl;
+        cout << "Stay in the car and continue to wait for help." << endl;
+        cin >> input5;
+        cout << " \n------------------------------\n";
+        cout << endl;
+
+        if(input5 == 1){
+            cout << "Game Over: A dinosaur strolling by notices you stumbling in the rain and quickly consumes you as dinner." << endl;
+        }
+        else if(input5 == 2){
+            cout << "Game Over: A curious pack of compies, chicken size dinosaurs,  spotted the car and broke in. They painfully eat you alive." << endl;
+        }
+    }
+}
