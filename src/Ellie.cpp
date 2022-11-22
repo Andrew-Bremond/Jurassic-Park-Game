@@ -24,7 +24,7 @@ void Ellie::sceneOne(){
 
     cout << "1. Stay inside where is is nice and warm\n";
     
-    cin << input1;
+    cin >> input1;
     //option one choice:
     if (input1 == 1){
         int input2;
@@ -111,7 +111,7 @@ void Ellie::sceneOne(){
                     cout << "Game Over: Dinosaurs have ears - and sharp fangs. You run into some and never come out \n";
                 }
             }
-            else if (input5 == 2){
+            else if (input5 == 1){
                 cout << "You go into the jeep and see Ian yelling at you, you hear the T-rex "
                 << "before you see it. You jump into the car with Ian and Muldoon and drive to safety.\n";
                 sceneTwo();
