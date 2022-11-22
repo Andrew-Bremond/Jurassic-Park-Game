@@ -1,4 +1,3 @@
-//Alan and the kids file for code
 #include "../header/AlanKids.h"
 
 AlanKids::AlanKids(){
@@ -105,3 +104,4 @@ void AlanKids::sceneFour(){
         }
     }
 }
+

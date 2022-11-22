@@ -1,4 +1,3 @@
-//Alan and the kids header file
 #include <iostream>
 #include <string>
 #include "Character.h"
