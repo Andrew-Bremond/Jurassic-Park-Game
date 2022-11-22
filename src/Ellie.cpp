@@ -97,7 +97,7 @@ void Ellie::sceneOne(){
                     cout << "Game Over: Dinosaurs have ears - and sharp fangs. You run into some and never come out." << endl;
                 }
             }
-            else if (input5 == 2){
+            else if (input5 == 1){
                 cout << "You go into the jeep and see Ian yelling at you, you hear the T-rex before you see it." << endl;
                 cout << "You jump into the car with Ian and Muldoon and drive to safety." << endl;
                 sceneTwo();
