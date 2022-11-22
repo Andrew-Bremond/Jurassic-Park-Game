@@ -410,6 +410,7 @@ void Ellie::sceneFour(){
         else if(input5 == 2){
             cout << "Death by large spinning fan." << endl;
             cout << "GAME OVER" << endl;
+            //calls dies()
         }
     }
 }
