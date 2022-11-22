@@ -1,5 +1,5 @@
 //Ellie.h
-#include<iostream>
+#include <iostream>
 #include <string>
 #include "Character.h"
 //#include "../main.cpp"
@@ -11,6 +11,7 @@ using namespace std;
 
 class Ellie: public Character{
  public:
+    Ellie();
     void setup();
     void sceneOne ();
     void sceneTwo ();
