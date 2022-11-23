@@ -4,7 +4,7 @@
 // #include "header/AlanKids.h"
 // #include "header/Nedry.h"
 // #include "header/IanHammond.h"
-#include "Story.h"
+//#include "Story.h"
 
 
 #include <string>
@@ -15,7 +15,7 @@ using namespace std;
 #define __CHARACTER_H__
 
 
-class Character : public Story{
+class Character{
 
 public:
     void dies();

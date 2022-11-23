@@ -1,5 +1,5 @@
 //character.cpp
-#include character.h
+#include "../header/Character.h"
 
 using namespace std;
 

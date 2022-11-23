@@ -1,7 +1,7 @@
 //story.cpp
-#include "../header/Story.h"
+//#include "../header/Story.h"
+#include "../header/Ellie.h"
 #include <iostream>
-
 
 void Story::movieDescription(){
 
@@ -27,8 +27,6 @@ void Story::movieDescription(){
     //return;
 }
 
-void Story::characterMenu(){
-
 
 void Story::characterMenu(){
     cout << "Character menu: \n";
@@ -44,8 +42,8 @@ void Story::characterMenu(){
     cin >> input;
 
     if(input == 2){
-        Ellie ellie;
-        ellie.setup();
+        Ellie *test = new Ellie();
+        test->setup();
     }
 
     // if(input == 0)
@@ -121,10 +119,4 @@ void Story::intro(){
         cout << "Sorry to see you go! \n";
     }
 
-}
-
-int main(){
-    movieDescription();
-    characterMenu();
-    return 0;
 }
