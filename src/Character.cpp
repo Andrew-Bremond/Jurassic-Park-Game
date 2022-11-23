@@ -19,7 +19,8 @@ void Character::dies() {
 
 void Character::lives() {
     string choice;
-    cout << "Congrats you've survived Jurassic Park and you've finished the game." << endl;
+    cout << "\n----------------------------------\n";
+    cout << "Congrats you've survived Jurassic Park! Your character is on a helicopter to safety, off the island, and you've finished the game!" << endl;
     cout << "Would you like to play again 'r' or quit the game 'q'?" << endl;
     cin >> choice;
 
