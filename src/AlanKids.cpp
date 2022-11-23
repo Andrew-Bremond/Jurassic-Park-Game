@@ -258,12 +258,12 @@ void AlanKids::sceneThree(){
         cout << endl;
 
         if (choice2 == 1){
-            cout << "GAME OVER: There is no nearby functional jeep and a dinosaur catches you offguard."
+            cout << "GAME OVER: There is no nearby functional jeep and a dinosaur catches you offguard." << endl;
             cout << "HINT: Don't abadon the kids." << endl;
             dies();
         }
         else if (choice2 == 2){
-            cout << "GAME OVER: That was pretty silly. You got eaten."
+            cout << "GAME OVER: That was pretty silly. You got eaten." << endl;
             cout << "HINT: Don't abadon the kids." << endl;
             dies();
         }

@@ -144,7 +144,7 @@ void Nedry::sceneThree(){
         cout << "Now that the spinning arrow got hit, you don't know which way to go." << endl;
         cout << "1. Drive left." << endl;
         cout << "2. Drive right." << endl;
-        cin choice2;
+        cin >> choice2;
         cout << " \n------------------------------\n";
         cout << endl;
 
@@ -158,7 +158,7 @@ void Nedry::sceneThree(){
             cout << endl;
 
             if (choice3 == 1){
-                cout << "GAME OVER: T-rex are attracted to movement, which made you a big target." << end;
+                cout << "GAME OVER: T-rex are attracted to movement, which made you a big target." << endl;
                 cout << "HINT: Try the other turn." << endl;
                 dies();
             }
