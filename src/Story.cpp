@@ -1,9 +1,7 @@
 //story.cpp
 #include "../header/Story.h"
-
 #include <iostream>
 
-// void Story::movieDescription();
 
 void Story::movieDescription(){
 
@@ -16,7 +14,7 @@ void Story::movieDescription(){
     << "agreeing, they are flown to the island and meet chaos theorist "
     << "Ian Malcolm. Alan, Ellie, and Ian are shocked to discover that "
     << "the island has dinosaurs! Hammond is trying to open a dinosaur "
-    << "attraction for the public. After meeting Hammond’s grandchildren, "
+    << "attraction for the public. After meeting Hammond's grandchildren, "
     << "the group goes on a tour of the park, with Hammond watching from "
     << "headquarters. Passing through the different sections of the park, "
     << "the group leaves the safety of the cars and go to find a sick "
@@ -28,6 +26,9 @@ void Story::movieDescription(){
     characterMenu();
     //return;
 }
+
+void Story::characterMenu(){
+
 
 void Story::characterMenu(){
     cout << "Character menu: \n";

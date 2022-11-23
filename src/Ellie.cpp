@@ -17,7 +17,7 @@ void Ellie::sceneOne(){
     int input1;
     cout << "You stayed behind with the sick dinosaur to check out its poop. "
     << "When you are done you head back to the headquarters to wait for the others "
-    << "that went on to finish the tour. When they don’t come back and a storm "
+    << "that went on to finish the tour. When they don't come back and a storm "
     << "appears, you want to go and help. The power is out and the dinosaur fences "
     << "are down, do you…" << endl;
 
