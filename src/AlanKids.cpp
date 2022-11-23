@@ -47,9 +47,15 @@ void AlanKids::sceneOne(){
             
             if(input3 == 1){
                 cout << "Game Over: The T-rex walks over to you and quickly and effortlessly pops you in his mouth to never be seen again." << endl;
+                dies();
             }
             else if(input3 == 2){
                 cout << "Game Over: This attempt to blind a dinosaur was really innefective and resulted in death" << endl;
+                dies();
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             }
         }
         else if (input2 == 2){
@@ -71,7 +77,16 @@ void AlanKids::sceneOne(){
             else if(input4 == 2){
                 cout << "Game Over: Your selfishness blinded you from making the correct decisions. "
                 "The T-rex ate you as you made rash-jerky movements in your escape. " << endl;
+                dies();
             }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
+            }
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     }
     else if(input1 == 2){
@@ -87,9 +102,15 @@ void AlanKids::sceneOne(){
 
         if(input5 == 1){
             cout << "Game Over: Trying to fix a car is not the smartest decision when a hungry T-rex is mere yards away. Death by T-rex." << endl;
+            dies();
         }
         else if(input5 == 2){
             cout << "Game Over: The T-rex senses movement. Your running made the T-rex run after you and eat you up as a snack." << endl;
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     }
     else if(input1 == 3){
@@ -105,11 +126,21 @@ void AlanKids::sceneOne(){
 
         if(input6 == 1){
             cout << "Game Over: You run out of the bathroom straight into the wide open jaws of a hungry T-rex." << endl;
+            dies();
         }
         else if(input6 == 2){
             cout << "Game Over: The T-rex decided to check out the bathroom. He rips off the roof and sees you guys. "
             "He eats you and becomes satisfied by his meal. " << endl;
+            dies();
         }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
     }
 }
 
@@ -150,14 +181,16 @@ void AlanKids::sceneThree(){
             if (choice3 == 1){
                 cout << "GAME OVER: You manage to hop the fence with ease, but the kids didn't make it on time and got shocked." << endl;
                 cout << "HINT: Try climbing the fence before electricity comes back on." << endl;
+                dies();
             }
             else if (choice3 == 2){
                 cout << "GAME OVER: A wild dinosaur comes out of nowhere and attacks." << endl;
                 cout << "HINT: Try climbing the fence before electricity comes back on." << endl;
+                dies();
             }
             else {
                 cout << "invalid input, exiting game" << endl;
-                exit1();
+                exit(0);
             }
         }
         else if (choice2 == 2){
@@ -172,19 +205,21 @@ void AlanKids::sceneThree(){
             
             if (choice3 == 1){
                 cout << "Thankfully the shock was not that bad, and you all manage to live." << endl;
+                sceneFour();
         
             }
             else if (choice3 == 2){
                 cout << "GAME OVER: Tim isn't that guy. He is not him."  << endl;
+                dies();
             }
             else {
                 cout << "invalid input, exiting game" << endl;
-                exit1();
+                exit(0);
             }
         }
         else {
             cout << "invalid input, exiting game" << endl;
-            exit1();
+            exit(0);
         }
     }
     else if (choice1 == 2){
@@ -201,14 +236,16 @@ void AlanKids::sceneThree(){
             cout << "GAME OVER: The climbing is slow due to the gloomy ambiance." << endl;
             cout << "The electricity comes back on earlier that expected and gets the best of you." << endl;
             cout << "HINT: Play the joke." << endl;
+            dies();
         }
         else if (choice2 == 2){
             cout << "GAME OVER: Where's the saw coming from? Behind your ear? No." << endl;
             cout << "HINT: Should've play the clown move earlier." << endl;
+            dies();
         }
         else {
             cout << "invalid input, exiting game" << endl;
-            exit1();
+            exit(0);
         }
     }
     else if (choice1 == 3){
@@ -223,19 +260,21 @@ void AlanKids::sceneThree(){
         if (choice2 == 1){
             cout << "GAME OVER: There is no nearby functional jeep and a dinosaur catches you offguard."
             cout << "HINT: Don't abadon the kids." << endl;
+            dies();
         }
         else if (choice2 == 2){
             cout << "GAME OVER: That was pretty silly. You got eaten."
             cout << "HINT: Don't abadon the kids." << endl;
+            dies();
         }
         else {
             cout << "invalid input, exiting game" << endl;
-            exit1();
+            exit(0);
         }
     }
     else {
         cout << "invalid input, exiting game" << endl;
-        exit1();
+        exit(0);
     }
 
 }
@@ -262,9 +301,15 @@ void AlanKids::sceneFour(){
         cout << endl;
         if (val2 == 1){
             cout << "Game Over: This angers the raptor even more and starts attacking you." << endl;
+            dies();
         }
         else if (val2 == 2){
             cout << "Game Over: You tried to escape however they were too fast for you and were attacked by the raptor." << endl;
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     }
     else if (val1 == 1){
@@ -292,9 +337,15 @@ void AlanKids::sceneFour(){
             cout << endl;
             if (val4 == 1){
                 cout << "Game Over: You are unable to defend yourself and are eaten to bits." << endl;
+                dies();
             }
             else if (val4 == 2){
                 cout << "Game Over: You are unable to defend yourself and are eaten to bits." << endl;
+                dies();
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             }
         }
         else if (val3 == 1){
@@ -322,15 +373,34 @@ void AlanKids::sceneFour(){
                 cout << endl;
                 if (val6 == 1){
                     cout << "Game Over: The raptors know how to open doors so they catch up and attack you." << endl;
+                    dies();
                 }
                 else if (val6 == 2){
                     cout << "Game Over: The raptors from the kitchen called more raptors which come and eat you alive." << endl;
+                    dies();
+                }
+                else {
+                    cout << "invalid input, exiting game" << endl;
+                    exit(0);
                 }
             }
             else if (val5 == 2){
                 cout << "So, trap the raptor and escape them." << endl;
                 cout << "You meet up and find Alan and Ellie, soon the raptors get out however the T-Rex fights them off giving you a chance to escape." << endl;
+                lives();
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             }
         }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
     }
 }
