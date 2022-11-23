@@ -148,7 +148,7 @@ void IanHammond::sceneThree() {
             }
             else {
                 cout << "invalid input, exiting game." << endl;
-                exit1();
+                exit(0);
             }
 
         }
@@ -187,12 +187,12 @@ void IanHammond::sceneThree() {
             }
             else {
                 cout << "invalid input, exiting game." << endl;
-                exit1();
+                exit(0);
             }
         }
         else {
             cout << "invalid input, exiting game." << endl;
-            exit1();
+            exit(0);
         }
     }
     else if (choice1 == 2) {
@@ -207,15 +207,15 @@ void IanHammond::sceneThree() {
 
         if (choice2 == 1){
             cout << "GAME OVER: Ellie falls down a hole and meets her fate." << endl;
-            cout << "HINT: Make sure to walk down the stairs in the first place."
+            cout << "HINT: Make sure to walk down the stairs in the first place." << endl;
         }
         else if (choice2 == 2){
-            cout << "GAME OVER: Ellie stumbled upon a raptor."
+            cout << "GAME OVER: Ellie stumbled upon a raptor." << endl;
             cout << "HINT: Make sure to walk down the stairs in the first place." << endl;
         }
         else {
             cout << "invalid input, exiting game." << endl;
-            exit1();
+            exit(0);
         }
     }
     else if (choice1 == 3) {
@@ -239,7 +239,7 @@ void IanHammond::sceneThree() {
     }
     else {
         cout << "invalid input, exiting game." << endl;
-        exit1();
+        exit(0);
     }
 }
 
@@ -268,7 +268,7 @@ void IanHammond::sceneTwo(){
         cout << endl;
         if (input2 == 1){
             cout << "Game Over: Giving up already?! You can still save your family!\n";
-            Character.dies();
+            dies();
         }
         else if (input2 == 2){
             cout << "Game Over: That helps nobody - calm down!\n";
@@ -336,7 +336,7 @@ void IanHammond::sceneTwo(){
                     cout << "Game Over: You put the lives of your grandchildren at risk and "
                     << "paid the ultimate price - losing the ones you love. Even the park is lost "
                     << "- there is no saving your dream \n";
-                    Character.dies();
+                    dies();
 
                 }
             }
