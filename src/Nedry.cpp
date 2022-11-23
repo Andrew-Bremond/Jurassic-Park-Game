@@ -105,6 +105,103 @@ void Nedry::sceneOne(){
     }
 }
 
+
+
+void Nedry::sceneTwo(){
+    int input1;
+    cout << "You now have the embryos in your sealed container. The container only has limited "
+    << "cold time to keep the embryos safe AND the boat leaves any minute. "
+    << "You are looking for the jeeps from the embryo room. Do you…" << endl;
+
+    cout << "1. Go back to your office to find directions from your co-workers\n";
+    cout << "OR\n";
+    cout << "2. Head to the right and hope to find a map while you move\n";
+    
+    cin >> input1;
+    cout << " \n------------------------------\n";
+    //option one choice:
+    if (input1 == 1){
+        int input2;
+        //went to office track:
+        cout << "You make it to the office without getting lost. You quickly tell "
+        << "your coworkers an excuse to leave again. You tell them..?" << endl;
+        cout << "1. That you have to reset the computers manually in another room.\n";
+        cout << "Or\n";
+        cout << "2. You have to go to the vending machine. \n";
+        cin >> input2;
+        cout << " \n------------------------------\n";
+        cout << endl;
+        if (input2 == 2){
+            cout << "Game Over: You've already used this excuse once! "
+            << "They catch onto your sneaky plan and arrest you.\n";
+            //call dies()
+        }
+        else if (input2 == 1){
+            cout << "Game Over: You walk down twards the jeeps but had forgotten "
+            << "about the security camera in the other parts of the buildings. "
+            << "You go down a hallway that still has its cameras on and is caught. \n";
+            //call dies()
+        }
+    } //option two choice:
+    else if (input1 == 2){
+        cout << "You walk down the hallway to an intersection and find a map. It directs you towards the jeeps. "
+        << " You can either pass by the empty cafeteria or the crowded science labs, which way do you go? \n" << endl;
+
+        int input3;
+        cout << "1. Crowded science lab" << endl;
+        cout << "Or" << endl;
+        cout << "2. Empty cafeteria \n";
+        cin >> input3;
+        cout << " \n------------------------------\n";
+        cout << endl;
+
+        if (input3 == 1){
+            int input4;
+            cout << "Passing by the science lab some coworkers call out to you for some advice. Do you... \n";
+            cout << "1. Hastily go and help them." << endl;
+            cout << "Or" << endl;
+            cout << "2. Pretend like you don't hear them and keep walking." << endl;
+            cin >> input4;
+            cout << " \n------------------------------\n";
+            cout << endl;
+            if (input4 == 1){
+                cout << "Game Over: Your coworkers corner you and ask pressing "
+                << "questions after noticing your shifty behavior. Your plan is revealed and you are caught.\n";
+            }
+            else if (input4 == 2){
+                cout << "Game Over: Your coworkers call security after noticing how nervous you walk by. You are caught.\n";
+            }
+        }
+        else if (input3 == 2){
+            cout << "You walk by the quiet cafeteria without running into anybody. You hear some noises from the kitchen. Do you... \n";
+            cout << endl;
+
+            int input5;
+            cout << "1. Go look in the kitchen, you could use a snack for on the road.\n";
+            cout << "Or" << endl;
+            cout << "2. Continue speed walking down th hallway worred about time. \n";
+            cin >> input5;
+            cout << " \n------------------------------\n";
+            cout << endl;
+
+            if (input5 == 1){
+                cout << "Game Over: Your snack break took too long, it would be impossible to drive to the boat ontime. \n";
+            }
+            else if (input5 == 2){
+                cout << "You make it to the jeeps in time. Now to drive through the storm, Good luck!\n";
+                cout << "\n------------------------------\n";
+                sceneThree();
+            }
+        }
+    }
+}
+//end scene two
+
+
+
+
+
+
 void Nedry::sceneFour(){
     int input1; 
     cout << "You crashed your car while not staying focused on the road. "
