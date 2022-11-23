@@ -135,13 +135,13 @@ void Nedry::sceneTwo(){
         if (input2 == 2){
             cout << "Game Over: You've already used this excuse once! "
             << "They catch onto your sneaky plan and arrest you.\n";
-            //call dies()
+            //Character.dies()
         }
         else if (input2 == 1){
             cout << "Game Over: You walk down twards the jeeps but had forgotten "
             << "about the security camera in the other parts of the buildings. "
             << "You go down a hallway that still has its cameras on and is caught. \n";
-            //call dies()
+            //Character.dies()
         }
     } //option two choice:
     else if (input1 == 2){
