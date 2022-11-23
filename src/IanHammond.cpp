@@ -33,9 +33,15 @@ void IanHammond::sceneOne()
         cout << endl;
         if (val2 == 1){
             cout << "Game Over: The T-Rex eats you alive." << endl;
+            dies();
         }
         else if (val2 == 2){
             cout << "Game Over: The T-Rex eats you all alive." << endl;
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     }
     else if (val1 == 2){
@@ -63,9 +69,15 @@ void IanHammond::sceneOne()
             cout << endl;
             if (val4 == 1){
                 cout << "Game Over: The T-Rex eats the car and you so you die a quick death." << endl;
+                dies();
             }
             else if (val4 == 2){
                 cout << "Game Over: The T-Rex swallows you alive." << endl;
+                dies();
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             }
         }
         else if (val3 == 1){
@@ -93,16 +105,35 @@ void IanHammond::sceneOne()
                 cout << endl;
                 if (val6 == 1){
                     cout << "Game Over: You are injured and don't make it up and are eaten alive." << endl;
+                    dies();
                 }
                 else if (val6 == 2){
                     cout << "Game Over: The T-Rex picks it up and eats you alive." << endl;
+                    dies();
+                }
+                else {
+                    cout << "invalid input, exiting game" << endl;
+                    exit(0);
                 }
             }
             else if (val5 == 2){
                 cout << "Not doing anything helps." << endl;
                 cout << "You escape the T-Rex for now." << endl;
+                sceneTwo();
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             }
         }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
     }
 }
 
@@ -140,11 +171,13 @@ void IanHammond::sceneThree() {
                 cout << "You scream RUN at the top of your lungs for Ellie to start running." << endl;
                 cout << "GAME OVER: Unfortunately, Ellie can't outrun a raptor." << endl;
                 cout << "HINT: Try to follow the cables." << endl;
+                dies();
                 
             }
             else if (choice3 == 2){
                 cout << "GAME OVER: :(" << endl;
                 cout << "HINT: Try to follow the cables." << endl;
+                dies();
             }
             else {
                 cout << "invalid input, exiting game." << endl;
@@ -176,14 +209,21 @@ void IanHammond::sceneThree() {
 
                 if (choice4 == 1){
                     cout << "GAME OVER: Wrong button :(" << endl;
+                    dies();
 
                 }
                 else if (choice4 == 2){
                     cout << "Congrats, the power is back on" << endl;
+                    lives();
+                }
+                else {
+                    cout << "invalid input, exiting game" << endl;
+                    exit(0);
                 }
             }
             else if (choice3 == 2) {
                 cout << "GAME OVER: Ellie flipped the detonate switch and exploded." << endl;
+                dies();
             }
             else {
                 cout << "invalid input, exiting game." << endl;
@@ -207,11 +247,13 @@ void IanHammond::sceneThree() {
 
         if (choice2 == 1){
             cout << "GAME OVER: Ellie falls down a hole and meets her fate." << endl;
-            cout << "HINT: Make sure to walk down the stairs in the first place." << endl;
+            cout << "HINT: Make sure to walk down the stairs in the first place."
+            dies();
         }
         else if (choice2 == 2){
             cout << "GAME OVER: Ellie stumbled upon a raptor." << endl;
             cout << "HINT: Make sure to walk down the stairs in the first place." << endl;
+            dies();
         }
         else {
             cout << "invalid input, exiting game." << endl;
@@ -230,11 +272,17 @@ void IanHammond::sceneThree() {
         if (choice2 == 1){
             cout << "GAME OVER: Despite your amazing speech, Ellie got beat by the raptor." << endl;
             cout << "HINT: Make sure to walk down the stairs in the first place." << endl;
+            dies();
 
         }
         else if (choice2 == 2){
             cout << "Game Over: Ellie got spotted by the raptor due to your loud walkie-talkie." << endl;
             cout << "HINT: Make sure to walk down the stairs in the first place." << endl;
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     }
     else {
@@ -246,7 +294,7 @@ void IanHammond::sceneThree() {
 void IanHammond::sceneTwo(){
     int input1;
     cout << "Hammond (you) are sitting down eating icecream in the cafeteria. "
-    << "You are surrounded by your lif’s work but you feel empty without your "
+    << "You are surrounded by your life's work but you feel empty without your "
     << "grandchildren. You are worried sick. Ellie Sattler ssits down with you do you:" << endl;
 
     cout << "1. Start a conversation with her\n";
@@ -262,7 +310,7 @@ void IanHammond::sceneTwo(){
         << "still worry about your grandchildren. Do you:" << endl;
         cout << " 1. Start crying and give up \n";
         cout << "Or\n";
-        cout << "2. Curse Ian’s name because he was saved and not your grandchildren\n";
+        cout << "2. Curse Ian's name because he was saved and not your grandchildren\n";
         cin >> input2;
         cout << " \n------------------------------\n";
         cout << endl;
@@ -272,7 +320,11 @@ void IanHammond::sceneTwo(){
         }
         else if (input2 == 2){
             cout << "Game Over: That helps nobody - calm down!\n";
-            //call dies()
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     } //option two choice:
     else if (input1 == 1){
@@ -290,6 +342,7 @@ void IanHammond::sceneTwo(){
         if (input3 == 1){
             cout << "Game Over: Dinosaurs being great is not your true worry - "
             << "why not speak your truth?\n";
+            dies();
         }
         else if (input3 == 2){
             cout << "You mention your grandchildren. It is brought up that "
@@ -311,6 +364,7 @@ void IanHammond::sceneTwo(){
                 cout << "Game over: You mention your shoes in a serious conversation "
                 << "- Ellie slaps you. You've lost all respect from others - the park is not approved "
                 << "and your grandchildren are still lost in the park. \n";
+                dies();
             }
             else if (input5 == 1){
                 cout << "You continue on - rambling now about how the next dinosaur park "
@@ -339,8 +393,24 @@ void IanHammond::sceneTwo(){
                     dies();
 
                 }
+                else {
+                    cout << "invalid input, exiting game" << endl;
+                    exit(0);
+                }
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             }
         }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
     }
 }
 //end scene two

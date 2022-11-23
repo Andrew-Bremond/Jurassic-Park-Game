@@ -32,9 +32,15 @@ void Nedry::sceneOne(){
         cout << endl;
         if (val2 == 1){
             cout << "Game Over: You took too long buying snacks to cover yourself, the boat left before you even got a chance to get the embryos." << endl;
+            dies();
         }
         else if (val2 == 2){
             cout << "Game Over: You aren't as fast as you think and your coworkers watch you go into the cold starage room and arrest you." << endl;
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     }
     else if (val1 == 2){
@@ -62,9 +68,11 @@ void Nedry::sceneOne(){
             cout << endl;
             if (val4 == 1){
                 cout << "Game Over: You are given more work and can't leave. The dinosaurs from the lab escape and eat you alive as the system goes down." << endl;
+                dies();
             }
             else if (val4 == 2){
                 cout << "Game Over: He makes you go home but you took too long and the dinosaurs from the lab escape and eat you alive as the system goes down." << endl;
+                dies();
             }
         }
         else if (val3 == 1){
@@ -92,17 +100,31 @@ void Nedry::sceneOne(){
                 cout << endl;
                 if (val6 == 1){
                     cout << "Game Over: The eggs break during your walk back and the embryos all fall out of your pocket. Security finds you." << endl;
+                    dies();
                 }
                 else if (val6 == 2){
                     cout << "Game Over: It's too late and dinosaurs are now in the building. They eat you alive." << endl;
+                    dies();
                 }
             }
             else if (val5 == 2){
                 cout << "Congrats, you were able to grab the embryos in time to still maybe make the boat!" << endl;
                 cout << " Be careful though, the storm is becoming stronger and stronger." << endl;
-                //call sceneTwo();
+                sceneTwo();
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             }
         }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
     }
 }
 
@@ -138,10 +160,12 @@ void Nedry::sceneThree(){
             if (choice3 == 1){
                 cout << "GAME OVER: T-rex are attracted to movement, which made you a big target." << endl;
                 cout << "HINT: Try the other turn." << endl;
+                dies();
             }
             else if (choice3 == 2){
                 cout << "GAME OVER: Don't try to be the hero. The T-rex got you." << endl;
                 cout << "HINT: Try the other turn." << endl;
+                dies();
             }
             else {
                 cout << "invalid input, exiting game." << endl;
@@ -166,11 +190,16 @@ void Nedry::sceneThree(){
             }
             else if (choice3 == 2){
                 cout << "GAME OVER: You're not that good of a driver." << endl;
+                dies();
             }
             else {
                 cout << "invalid input, exiting game." << endl;
                 exit(0);
             }
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     }
     else if (choice1 == 2){
@@ -188,10 +217,12 @@ void Nedry::sceneThree(){
             cout << "GAME OVER: You obviously don't look like a runner." << endl;
             cout << "The boat left without you." << endl;
             cout << "HINT: Try flipping the switch." << endl;
+            dies();
         }
         else if (choice2 == 2){
             cout << "GAME OVER: You took too long to think and the boat left without you." << endl;
             cout << "HINT: Try flipping the switch." << endl;
+            dies();
         }
         else {
             cout << "invalid input, exiting game." << endl;
@@ -231,13 +262,17 @@ void Nedry::sceneTwo(){
         if (input2 == 2){
             cout << "Game Over: You've already used this excuse once! "
             << "They catch onto your sneaky plan and arrest you.\n";
-            //Character.dies()
+            dies();
         }
         else if (input2 == 1){
             cout << "Game Over: You walk down twards the jeeps but had forgotten "
             << "about the security camera in the other parts of the buildings. "
             << "You go down a hallway that still has its cameras on and is caught. \n";
-            //Character.dies()
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     } //option two choice:
     else if (input1 == 2){
@@ -264,9 +299,15 @@ void Nedry::sceneTwo(){
             if (input4 == 1){
                 cout << "Game Over: Your coworkers corner you and ask pressing "
                 << "questions after noticing your shifty behavior. Your plan is revealed and you are caught.\n";
+                dies();
             }
             else if (input4 == 2){
                 cout << "Game Over: Your coworkers call security after noticing how nervous you walk by. You are caught.\n";
+                dies();
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             }
         }
         else if (input3 == 2){
@@ -283,13 +324,26 @@ void Nedry::sceneTwo(){
 
             if (input5 == 1){
                 cout << "Game Over: Your snack break took too long, it would be impossible to drive to the boat ontime. \n";
+                dies();
             }
             else if (input5 == 2){
                 cout << "You make it to the jeeps in time. Now to drive through the storm, Good luck!\n";
                 cout << "\n------------------------------\n";
                 sceneThree();
             }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
+            }
         }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
     }
 }
 //end scene two
@@ -330,10 +384,16 @@ void Nedry::sceneFour(){
             if(input3 == 1){
                 cout << "Game Over: You, even with a weapon, are no competition for a dinosaur. "
                 "He spits on your face and you die painfully." << endl;
+                dies();
             }
             else if(input3 == 2){
                 cout << "Game Over: You, even with a weapon, are no competition for a dinosaur. "
                 "He spits on your face and you die painfully." << endl;
+                dies();
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             }
         }
         else if(input2 == 2){
@@ -348,14 +408,25 @@ void Nedry::sceneFour(){
             cout << endl;
 
             if(input4 == 1){
-                cout << "Game Over: the dinosaur is not a dog and didn't fall for your trick. "
+                cout << "The dinosaur is not a dog and didn't fall for your trick. "
                 "Instead it spits acid like liquid on your face. He blinds you and kills you." << endl;
                 cout << "Though this is what happens in the movie, stealing is never "
                 "tolerated and punishment will be inflicted - by dinos" << endl;
+                cout << "Congrats you've reached the end of the villan's story." << endl;
+                
             }
             else if(input4 == 2){
                 cout << "Game Over: You trigger the dinosaurs' predatory instincts and he chases you down and rips out your neck." << endl;
+                dies();
             }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
+            }
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     }
     else if(input1 == 2){
@@ -370,9 +441,19 @@ void Nedry::sceneFour(){
 
         if(input5 == 1){
             cout << "Game Over: A dinosaur strolling by notices you stumbling in the rain and quickly consumes you as dinner." << endl;
+            dies();
         }
         else if(input5 == 2){
             cout << "Game Over: A curious pack of compies, chicken size dinosaurs,  spotted the car and broke in. They painfully eat you alive." << endl;
+            dies();
         }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
     }
 }

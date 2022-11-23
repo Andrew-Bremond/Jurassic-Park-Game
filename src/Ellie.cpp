@@ -45,13 +45,17 @@ void Ellie::sceneOne(){
             << "in deep mud from the rain, youre trying to get the jeep out of "
             << "the mud when a Dilophosaurus sees you and hunts you down. Its venom kills you!\n";
             dies();
-            //call dies()
+            
         }
         else if (input2 == 2){
             cout << "Game Over: While on the roof trying to see over the tree tops of the jungle, "
             << "the storm picks up. It is attracted to the tallest thing with metal and strikes "
             << "you and the binoculars!\n";
-            //call dies()
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     } //option two choice:
     else if (input1 == 2){
@@ -81,12 +85,18 @@ void Ellie::sceneOne(){
             cout << endl;
             if (input4 == 1){
                 cout << "Game Over: The t-rex was making the sound and got your scent. "
-                << "Sorry but you’re its next snack! \n";
+                << "Sorry but you're its next snack! \n";
+                dies();
             }
             else if (input4 == 2){
                 cout << "Game Over: The t-rex isnt the only dangerous dinosaurs at the "
                 << "park. The Dilong dinosaur was right behind the bush and waited "
                 << "for you to sit down before taking a big bite!\n";
+                dies();
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             }
         }
         else if (input3 == 1){
@@ -116,9 +126,15 @@ void Ellie::sceneOne(){
                 cout << endl;
                 if (input6 == 1){
                     cout << "Game Over: That was not alan. You just ran into the raptors. Thanks for feeding them!\n";
+                    dies();
                 }
                 else if (input6 == 2){
                     cout << "Game Over: Dinosaurs have ears - and sharp fangs. You run into some and never come out \n";
+                    dies();
+                }
+                else {
+                    cout << "invalid input, exiting game" << endl;
+                    exit(0);
                 }
             }
             else if (input5 == 1){
@@ -127,7 +143,19 @@ void Ellie::sceneOne(){
                 cout << "\n------------------------------\n";
                 sceneTwo();
             }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
+            }
         }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
     }
 }
 //end scene one
@@ -171,13 +199,20 @@ void Ellie::sceneTwo (){
 
             if (choice3 == 1){
                 cout << "GAME OVER: The rustling in the bushes are heard, and the raptor get you. \nHINT: Don't throw the arm." << endl; 
+                dies();
             }
             else if (choice3 == 2){
                 cout << "GAME OVER: The raptor comes closer to you. She seems suspicious of you and starts to sniff and lick you." 
                 << "This somehow tickles you and you start to laugh. Your cover is blown. \nHINT: Don't throw the arm." << endl;
+                dies();
             }
             else if (choice3 == 3){
                 cout << "GAME OVER: You died like a baller B) \nHINT: Don't throw the arm" << endl;
+                dies();
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             }
         }
         else if (choice2 == 2){
@@ -193,7 +228,16 @@ void Ellie::sceneTwo (){
             }
             else if (choice3 == 2){
                 cout << "GAME OVER: You discover that Muldoon got eaten, and you are next." << endl;
+                dies();
             }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
+            }
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     }
     else if (choice1 == 2) {
@@ -206,9 +250,15 @@ void Ellie::sceneTwo (){
 
         if (choice2 == 1){
             cout << "GAME OVER: The BIG ONE comes from the bushes in an ambush and eats you. Clever Girl \nHINT: You can't outrun a raptor." << endl;
+            dies();
         }
         else if (choice2 == 2){
             cout << "GAME OVER: You accidently fall off a tree and the raptors get you. What a klutz. \nHINT: You can't outrun a raptor." << endl;
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     }
     else if (choice1 == 3) {
@@ -222,11 +272,21 @@ void Ellie::sceneTwo (){
         if (choice2 == 1){
             cout << "GAME OVER: You go for a quick 1-2 followed by a hook, but as you go for the hook, the raptor bites your arm off. You put up a good fight though.\n"
             << "HINT: You can't beat a raptor in hand to hand combat." << endl;
+            dies();
         }
         else if (choice2 == 2){
             cout << "GAME OVER: The raptor was too quick for you to land a hit. Instead the raptor hits your legs for a slow and painful death. \n"
             << "HINT: You can't beat a raptor in hand to hand combat." << endl;
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         } 
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
     }
 }
 //sceneTwo ends here
@@ -254,9 +314,15 @@ void Ellie::sceneThree(){
         cout << endl;
         if (val2 == 1){
             cout << "Game Over: The system took too long to load now the dinosaur has eaten you alive." << endl;
+            dies();
         }
         else if (val2 == 2){
             cout << "Game Over: You took too long trying to figure out what to do and the system froze so now the dinosaur has eaten you alive." << endl;
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
     }
     else if (val1 == 2){
@@ -284,9 +350,11 @@ void Ellie::sceneThree(){
             cout << endl;
             if (val4 == 1){
                 cout << "Game Over: The raptor moves much faster than you and enters the room then attacks you." << endl;
+                dies();
             }
             else if (val4 == 2){
                 cout << "Game Over: You missed the raptor and glass has shattered so the raptor comes into the room and attacks you." << endl;
+                dies();
             }
         }
         else if (val3 == 1){
@@ -314,16 +382,34 @@ void Ellie::sceneThree(){
                 cout << endl;
                 if (val6 == 1){
                     cout << "Game Over: The raptor finds you in the room and tears you apart." << endl;
+                    dies();
                 }
                 else if (val6 == 2){
                     cout << "Game Over: The raptor corners you and throws you around." << endl;
+                    dies();
+                }
+                else {
+                    cout << "invalid input, exiting game" << endl;
+                    exit(0);
                 }
             }
             else if (val5 == 2){
                 cout << "You, Alan, and the kids are in the vents. However, both raptors are now after you." << endl;
                 cout << "The raptors are still on your tail." << endl;
             }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
+            }
         }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
     }
 }
 //Scene Three Ends Here
@@ -365,11 +451,17 @@ void Ellie::sceneFour(){
             if(input3 == 1){
                 cout << "The two raptors are waiting for you in the kitchen. They quickly and very painfully kill you." << endl;
                 cout << "GAME OVER" << endl;
+                dies();
             }
             else if(input3 == 2){
                 cout << "You run for 100 yards down the vent until you reach a large spinning fan. "
                 "You can't get through. You die as the velociraptor is behind you and violently ends you." << endl;
-                cout << "GAME OVER" << endl; 
+                cout << "GAME OVER" << endl;
+                dies(); 
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
             } 
         }
         else if(input2 == 2){
@@ -387,12 +479,22 @@ void Ellie::sceneFour(){
             if(input4 == 1){
                 cout << "Patience is a virtue. The brief moment of huddling allowed for a T-rex to come in and kill all the velociraptors "
                 "allowing you to escape." << endl;
+                lives();
             }
             else if(input4 == 2){
                 cout << "Though valiant, you are no match for a dinosaur. "
                 "You all get mauled to death. Hint: probably shouldn't have tried to take a dino head on dumbass. " << endl;
                 cout << "GAME OVER" << endl;
+                dies();
             }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
+            }
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
         }
         
     }
@@ -409,12 +511,21 @@ void Ellie::sceneFour(){
         if(input5 == 1){
             cout << "You turn around and see the velociraptor snuck up behind you. He mauls you to death." << endl;
             cout << "GAME OVER" << endl;
+            dies();
         }
         else if(input5 == 2){
             cout << "Death by large spinning fan." << endl;
             cout << "GAME OVER" << endl;
-            //calls dies()
+            dies();
         }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
     }
 }
 // Scene 4 Ends Here
