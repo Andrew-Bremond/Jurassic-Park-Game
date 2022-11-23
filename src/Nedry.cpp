@@ -162,7 +162,7 @@ void Nedry::sceneThree(){
             if (choice3 == 1){
                 cout << "It was tough, but you made the right choice." << endl;
                 cout << "Get ready for more..." << endl;
-
+                sceneFour();
             }
             else if (choice3 == 2){
                 cout << "GAME OVER: You're not that good of a driver." << endl;

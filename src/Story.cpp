@@ -2,6 +2,10 @@
 #include "../header/Story.h"
 #include <iostream>
 
+Story::Story(){
+
+}
+
 
 void Story::movieDescription(){
 
@@ -28,9 +32,6 @@ void Story::movieDescription(){
 }
 
 void Story::characterMenu(){
-
-
-void Story::characterMenu(){
     cout << "Character menu: \n";
     cout << endl << "Welcome to the Character Menu \n";
     cout << "To select your character, input their number: \n";
@@ -43,10 +44,10 @@ void Story::characterMenu(){
 
     cin >> input;
 
-    if(input == 2){
-        Ellie ellie;
-        ellie.setup();
-    }
+    // if(input == 2){
+    //     Ellie ellie;
+    //     ellie.setup();
+    // }
 
     // if(input == 0)
     // {
@@ -123,8 +124,8 @@ void Story::intro(){
 
 }
 
-int main(){
-    movieDescription();
-    characterMenu();
-    return 0;
-}
+// int main(){
+//     movieDescription();
+//     characterMenu();
+//     return 0;
+// }
