@@ -157,7 +157,7 @@ void AlanKids::sceneThree(){
             }
             else {
                 cout << "invalid input, exiting game" << endl;
-                exit1();
+                exit(0);
             }
         }
         else if (choice2 == 2){
@@ -179,12 +179,12 @@ void AlanKids::sceneThree(){
             }
             else {
                 cout << "invalid input, exiting game" << endl;
-                exit1();
+                exit(0);
             }
         }
         else {
             cout << "invalid input, exiting game" << endl;
-            exit1();
+            exit(0);
         }
     }
     else if (choice1 == 2){
@@ -208,7 +208,7 @@ void AlanKids::sceneThree(){
         }
         else {
             cout << "invalid input, exiting game" << endl;
-            exit1();
+            exit(0);
         }
     }
     else if (choice1 == 3){
@@ -221,21 +221,21 @@ void AlanKids::sceneThree(){
         cout << endl;
 
         if (choice2 == 1){
-            cout << "GAME OVER: There is no nearby functional jeep and a dinosaur catches you offguard."
+            cout << "GAME OVER: There is no nearby functional jeep and a dinosaur catches you offguard." << endl;
             cout << "HINT: Don't abadon the kids." << endl;
         }
         else if (choice2 == 2){
-            cout << "GAME OVER: That was pretty silly. You got eaten."
+            cout << "GAME OVER: That was pretty silly. You got eaten." << endl;
             cout << "HINT: Don't abadon the kids." << endl;
         }
         else {
             cout << "invalid input, exiting game" << endl;
-            exit1();
+            exit(0);
         }
     }
     else {
         cout << "invalid input, exiting game" << endl;
-        exit1();
+        exit(0);
     }
 
 }

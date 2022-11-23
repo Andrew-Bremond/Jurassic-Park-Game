@@ -11,8 +11,6 @@ void Character::dies() {
     cin >> choice;
 
     if (choice == "r") {
-        // Story *test = new Story();
-        // test -> intro();
         intro();
     }
     else if (choice == "q") {
@@ -28,15 +26,9 @@ void Character::lives() {
     cin >> choice;
 
     if (choice == "r") {
-        // Story *test1 = new Story();
-        // test1 -> intro();    }
         intro();
     }
     else if (choice == "q") {
         exit(0);
     }
 }
-
-/*void Character::getInfo() {
-
-}*/
