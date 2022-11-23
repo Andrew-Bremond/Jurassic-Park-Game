@@ -7,8 +7,8 @@ using namespace std;
 
 int main() {
 
-//     Ellie * test = new Ellie();
-//     test->setup();
+    Ellie * test = new Ellie();
+    test->setup();
 
 
 
