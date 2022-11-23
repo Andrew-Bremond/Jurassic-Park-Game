@@ -1,5 +1,6 @@
 //character.cpp
-#include character.h
+#include "../header/Character.h"
+#include <iostream>
 
 using namespace std;
 
@@ -10,10 +11,12 @@ void Character::dies() {
     cin >> choice;
 
     if (choice == "r") {
-        Story.intro();
+        // Story *test = new Story();
+        // test -> intro();
+        intro();
     }
     else if (choice == "q") {
-        exit();
+        exit(0);
     }
 }
 
@@ -25,10 +28,12 @@ void Character::lives() {
     cin >> choice;
 
     if (choice == "r") {
-        Story.intro();
+        // Story *test1 = new Story();
+        // test1 -> intro();    }
+        intro();
     }
     else if (choice == "q") {
-        exit();
+        exit(0);
     }
 }
 
