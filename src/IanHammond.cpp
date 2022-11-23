@@ -107,6 +107,142 @@ void IanHammond::sceneOne()
 }
 
 
+void IanHammond::sceneThree() {
+    int choice1;
+    cout << "Ellie has just arrived down to the electrical room to power on the park." << endl;
+    cout << "1. Tell Ellie to go down the metal staircase." << endl;
+    cout << "2. Tell Ellie to take a left." << endl;
+    cout << "3. Tell Ellie to follow her heart." << endl;
+    cin >> choice1;
+    cout << " \n------------------------------\n";
+    cout << endl;
+
+    if (choice1 == 1) {
+        int choice2;
+        cout << "While Ellie wonders around the power room, she gets lost." << endl;
+        cout << "1. Tell her to walk through the fenced door." << endl;
+        cout << "2. Tell her to follow the main bundle of cables." << endl;
+        cin >> choice2;
+        cout << " \n------------------------------\n";
+        cout << endl;
+        
+        if (choice2 == 1){
+            int choice3;
+            cout << "As Ellie walks through the fenced door she see Ray Arnold's ripped arm." << endl;
+            cout << "Soon after Ellie encounters a raptor." << endl;
+            cout << "1. Yell RUNNNN" << endl;
+            cout << "2. Tough luck Ellie." << endl;
+            cin >> choice3;
+            cout << " \n------------------------------\n";
+            cout << endl;
+
+            if (choice3 == 1){
+                cout << "You scream RUN at the top of your lungs for Ellie to start running." << endl;
+                cout << "GAME OVER: Unfortunately, Ellie can't outrun a raptor." << endl;
+                cout << "HINT: Try to follow the cables." << endl;
+                
+            }
+            else if (choice3 == 2){
+                cout << "GAME OVER: :(" << endl;
+                cout << "HINT: Try to follow the cables." << endl;
+            }
+            else {
+                cout << "invalid input, exiting game." << endl;
+                exit1();
+            }
+
+        }
+        else if (choice2 == 2){
+            int choice3;
+            cout << "Ellie found the power box." << endl;
+            cout << "Ellie needs to pump up the primer handle in order to get a charge." << endl;
+            cout << "The primer handle is..." << endl;
+            cout << "1. Large, Flat and Gray." << endl;
+            cout << "2. Small, Round, and Red." << endl;
+            cin >> choice3;
+            cout << " \n------------------------------\n";
+            cout << endl;
+
+            if (choice3 == 1) {
+                int choice4;
+                cout << "Ellie pulls the switch and now she is at the last step." << endl;
+                cout << "1. Under the words “Power Outage” there's a red button that says “Push to Open” " << endl;
+                cout << "tell Ellie to push that one." << endl;
+                cout << "2. Under the words “Contact Position” there's a green button that says “Push to Close " << endl;
+                cout << "tell Ellie to push that one." << endl;
+                cin >> choice4;
+                cout << " \n------------------------------\n";
+                cout << endl;
+
+                if (choice4 == 1){
+                    cout << "GAME OVER: Wrong button :(" << endl;
+
+                }
+                else if (choice4 == 2){
+                    cout << "Congrats, the power is back on" << endl;
+                }
+            }
+            else if (choice3 == 2) {
+                cout << "GAME OVER: Ellie flipped the detonate switch and exploded." << endl;
+            }
+            else {
+                cout << "invalid input, exiting game." << endl;
+                exit1();
+            }
+        }
+        else {
+            cout << "invalid input, exiting game." << endl;
+            exit1();
+        }
+    }
+    else if (choice1 == 2) {
+        int choice2;
+        cout << "Confused Ellie tells you that there is no left turn and that she can only go down." << endl;
+        cout << "As she walks down she makes another intersection." << endl;
+        cout << "1. Tell Ellie to take a left." << endl;
+        cout << "2. Tell Ellie to take a right." << endl;
+        cin >> choice2;
+        cout << " \n------------------------------\n";
+        cout << endl;
+
+        if (choice2 == 1){
+            cout << "GAME OVER: Ellie falls down a hole and meets her fate." << endl;
+            cout << "HINT: Make sure to walk down the stairs in the first place."
+        }
+        else if (choice2 == 2){
+            cout << "GAME OVER: Ellie stumbled upon a raptor."
+            cout << "HINT: Make sure to walk down the stairs in the first place." << endl;
+        }
+        else {
+            cout << "invalid input, exiting game." << endl;
+            exit1();
+        }
+    }
+    else if (choice1 == 3) {
+        int choice2;
+        cout << "Tired of your mediocre jokes, Ellie goes downstairs. Ellie sees a raptor." << endl;
+        cout << "1. Tell Ellie to fight it and keep her mission." << endl;
+        cout << "2. Tell Ellie to sneak by and turn on the power." << endl;
+        cin >> choice2;
+        cout << " \n------------------------------\n";
+        cout << endl;
+
+        if (choice2 == 1){
+            cout << "GAME OVER: Despite your amazing speech, Ellie got beat by the raptor." << endl;
+            cout << "HINT: Make sure to walk down the stairs in the first place." << endl;
+
+        }
+        else if (choice2 == 2){
+            cout << "Game Over: Ellie got spotted by the raptor due to your loud walkie-talkie." << endl;
+            cout << "HINT: Make sure to walk down the stairs in the first place." << endl;
+        }
+    }
+    else {
+        cout << "invalid input, exiting game." << endl;
+        exit1();
+    }
+}
+
 void IanHammond::sceneTwo(){
     int input1;
     cout << "Hammond (you) are sitting down eating icecream in the cafeteria. "
@@ -208,3 +344,4 @@ void IanHammond::sceneTwo(){
     }
 }
 //end scene two
+

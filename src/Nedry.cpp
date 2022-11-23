@@ -106,7 +106,103 @@ void Nedry::sceneOne(){
     }
 }
 
+void Nedry::sceneThree(){
+    int choice1;
+    cout << "You're getting closer to escaping the Park and you see the large wooden doors leading to the exit..." << endl;
+    cout << "1. Flip the switch that's by the gate (maunal override)" << endl;
+    cout << "2. Run through the gate you with your jeep." << endl;
+    cin >> choice1;
+    cout << " \n------------------------------\n";
+    cout << endl;
 
+    if (choice1 == 1){
+        int choice2;
+        cout << "Due to your expertise and your intelligence, you manage to open the next gates as well and you drive off towards what you think is the nearest exit." << endl;
+        cout << "Because you're driving at night during a storm you don't clearly see the road sign and you hit it." << endl;
+        cout << "Now that the spinning arrow got hit, you don't know which way to go." << endl;
+        cout << "1. Drive left." << endl;
+        cout << "2. Drive right." << endl;
+        cin choice2;
+        cout << " \n------------------------------\n";
+        cout << endl;
+
+        if (choice2 == 1){
+            int choice3;
+            cout << "You meet up with the experts that were on the tour and you see the giant T-rex above them." << endl;
+            cout << "1. Drive in the opposite direction." << endl;
+            cout << "2. Honk and try to save them to drive its attention away." << endl;
+            cin >> choice3;
+            cout << " \n------------------------------\n";
+            cout << endl;
+
+            if (choice3 == 1){
+                cout << "GAME OVER: T-rex are attracted to movement, which made you a big target." << end;
+                cout << "HINT: Try the other turn." << endl;
+            }
+            else if (choice3 == 2){
+                cout << "GAME OVER: Don't try to be the hero. The T-rex got you." << endl;
+                cout << "HINT: Try the other turn." << endl;
+            }
+            else {
+                cout << "invalid input, exiting game." << endl;
+                exit1();
+            }
+        }
+        else if (choice2 == 2){
+            int choice3;
+            cout << "You made the right turn, and now you are getting closer to the boats." << endl;
+            cout << "With the rain and the dark, its more challenging to drive." << endl;
+            cout << "You barely manage to see a cliff coming up." << endl;
+            cout << "1. Don't turn" << endl;
+            cout << "2. Turn" << endl;
+            cin >> choice3;
+            cout << " \n------------------------------\n";
+            cout << endl;
+
+            if (choice3 == 1){
+                cout << "It was tough, but you made the right choice." << endl;
+                cout << "Get ready for more..." << endl;
+
+            }
+            else if (choice3 == 2){
+                cout << "GAME OVER: You're not that good of a driver." << endl;
+            }
+            else {
+                cout << "invalid input, exiting game." << endl;
+                exit1();
+            }
+        }
+    }
+    else if (choice1 == 2){
+        int choice2;
+        cout << "You crash through the gate James Bond style, but your jeep takes a lot of damage, especially the engine." << endl;
+        cout << "This forces you to try and reach the boat on foot." << endl;
+        cout << "With time running out you..." << endl;
+        cout << "1. Start running." << endl;
+        cout << "2. Try to think about where another jeep might be." << endl;
+        cin >> choice2;
+        cout << " \n------------------------------\n";
+        cout << endl;
+
+        if (choice2 == 1){
+            cout << "GAME OVER: You obviously don't look like a runner." << endl;
+            cout << "The boat left without you." << endl;
+            cout << "HINT: Try flipping the switch." << endl;
+        }
+        else if (choice2 == 2){
+            cout << "GAME OVER: You took too long to think and the boat left without you." << endl;
+            cout << "HINT: Try flipping the switch." << endl;
+        }
+        else {
+            cout << "invalid input, exiting game." << endl;
+            exit1();
+        }
+    }
+    else {
+        cout << "invalid input, exiting game." << endl;
+        exit1();
+    }
+}
 
 void Nedry::sceneTwo(){
     int input1;
@@ -197,11 +293,6 @@ void Nedry::sceneTwo(){
     }
 }
 //end scene two
-
-
-
-
-
 
 void Nedry::sceneFour(){
     int input1; 

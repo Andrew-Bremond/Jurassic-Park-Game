@@ -113,6 +113,133 @@ void AlanKids::sceneOne(){
     }
 }
 
+void AlanKids::sceneThree(){
+    int choice1;
+    cout << "You see the huge electric fence with a warning sign of 10000 volts." << endl;
+    cout << "As you approach it to climb to get on the other side, you throw a stick to see if it is turned on." << endl;
+    cout << "Nothing happened to the stick, and you see the great opportunity to prank the kids by pretended to be electrocuted." << endl;
+    cout << "Do you..." << endl;
+    cout << "1. Play the joke" << endl;
+    cout << "2. Don't play the joke" << endl;
+    cout << "3. Use the element of surprise to run away from the kids" << endl;
+    cin >> choice1;
+    cout << "\n------------------------------\n";
+    cout << endl;
+
+    if (choice1 == 1){
+        int choice2;
+        cout << "Tim loves your jokes, but Lex doesn't." << endl;
+        cout << "As you hear a dinosaur's roar, you decide to..." << endl;
+        cout << "1. Doubtful of the fence, you try to find away way to slip by." << endl;
+        cout << "2. Climb the Fence." << endl;
+        cin >> choice2;
+        cout << "\n------------------------------\n";
+        cout << endl;
+
+        if (choice2 == 1){
+            int choice3;
+            cout << "As you take your time to find a hole through the fence, " << endl;
+            cout << "you hear the alarms for the power to come back on." << endl;
+            cout << "You only have a few seconds to climb the fence..." << endl;
+            cout << "1. You hurry to climb the fence." << endl;
+            cout << "2. Keep looking for a hole in the fence." << endl;
+            cin >> choice3;
+            cout << "\n------------------------------\n";
+            cout << endl;
+
+            if (choice3 == 1){
+                cout << "GAME OVER: You manage to hop the fence with ease, but the kids didn't make it on time and got shocked." << endl;
+                cout << "HINT: Try climbing the fence before electricity comes back on." << endl;
+            }
+            else if (choice3 == 2){
+                cout << "GAME OVER: A wild dinosaur comes out of nowhere and attacks." << endl;
+                cout << "HINT: Try climbing the fence before electricity comes back on." << endl;
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit1();
+            }
+        }
+        else if (choice2 == 2){
+            int choice3;
+            cout << "You hear beeping, the power will soon turn back on." << endl;
+            cout << "Both you and Lex manage to get off but Tim is lagging behind." << endl;
+            cout << "1. Time gets electrocuted." << endl;
+            cout << "2. Tim jumps on time." << endl;
+            cin >> choice3;
+            cout << "\n------------------------------\n";
+            cout << endl;
+            
+            if (choice3 == 1){
+                cout << "Thankfully the shock was not that bad, and you all manage to live." << endl;
+        
+            }
+            else if (choice3 == 2){
+                cout << "GAME OVER: Tim isn't that guy. He is not him."  << endl;
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit1();
+            }
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit1();
+        }
+    }
+    else if (choice1 == 2){
+        int choice2;
+        cout << "Wow that's lame... the children really needed that brief humor relief." << endl;
+        cout << "In any case, even though the kids are gloomy you guys still need to escape." << endl;
+        cout << "1.Climb fence." << endl;
+        cout << "2. Saw your way through the fence." << endl;
+        cin >> choice2;
+        cout << "\n------------------------------\n";
+        cout << endl;
+
+        if (choice2 == 1){
+            cout << "GAME OVER: The climbing is slow due to the gloomy ambiance." << endl;
+            cout << "The electricity comes back on earlier that expected and gets the best of you." << endl;
+            cout << "HINT: Play the joke." << endl;
+        }
+        else if (choice2 == 2){
+            cout << "GAME OVER: Where's the saw coming from? Behind your ear? No." << endl;
+            cout << "HINT: Should've play the clown move earlier." << endl;
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit1();
+        }
+    }
+    else if (choice1 == 3){
+        int choice2;
+        cout << "You don't need kids. You climb the fence as fast as possible and ran somewehere far away." << endl;
+        cout << "1. Take a random jeep and drive off" << endl;
+        cout << "2. Conquer your fear and ride a dinosaur to victory." << endl;
+        cin >> choice2;
+        cout << "\n------------------------------\n";
+        cout << endl;
+
+        if (choice2 == 1){
+            cout << "GAME OVER: There is no nearby functional jeep and a dinosaur catches you offguard."
+            cout << "HINT: Don't abadon the kids." << endl;
+        }
+        else if (choice2 == 2){
+            cout << "GAME OVER: That was pretty silly. You got eaten."
+            cout << "HINT: Don't abadon the kids." << endl;
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit1();
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit1();
+    }
+
+}
+
 void AlanKids::sceneFour(){
     int val1;
     cout << "You made it back to the visitor center however Alan goes to find the others so Tim and Lex head towards the buffet." << endl;

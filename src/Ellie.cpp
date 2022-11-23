@@ -26,7 +26,9 @@ void Ellie::sceneOne(){
     cout << "2. Go out to try and find the others in the storm. \n";
     
     cin >> input1;
+
     cout << " \n------------------------------\n";
+
     //option one choice:
     if (input1 == 1){
         int input2;
