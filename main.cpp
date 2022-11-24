@@ -4,7 +4,9 @@
 #include "header/AlanKids.h"
 #include "header/IanHammond.h"
 #include "header/Nedry.h"
+#include "header/MiniGame.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -16,7 +18,7 @@ int main() {
     int input;
     cin >> input;
 
-    while(input == 0 || input == 1 || input == 2 || input == 3 || input == 4){
+    while(input == 0 || input == 1 || input == 2 || input == 3 || input == 4 || input == 5){
         
         while(input == 0){
             stories -> characterInfo();
@@ -39,6 +41,46 @@ int main() {
         else if(input == 4){
             Nedry *nedry = new Nedry();
             nedry -> setup();
+        }
+        else if(input == 5){
+            int gameInput;
+            string question;
+            string answer; 
+            MiniGame *game = new MiniGame();
+            game -> Intro();
+            cin >> gameInput;
+            question = game -> DinoGenerator(gameInput);
+            cout << question << endl;
+            cin >> answer;
+            string miniGameChoice;
+            if(game -> Verifciation(answer, gameInput) == true){
+                cout << "Congratulations you successfully answered the question!." << endl;
+                cout << "Would you like to play again 'r' or quit the game 'q'?" << endl;
+                cin >> miniGameChoice;
+                if (miniGameChoice == "r") {
+                    stories -> intro();
+                }
+                else if (miniGameChoice == "q") {
+                    exit(0);
+                }
+                else{
+                    exit(0);
+                }
+            }
+            else{
+                cout << "You didn't answer correctly." << endl;
+                cout << "Would you like to play again 'r' or quit the game 'q'?" << endl;
+                cin >> miniGameChoice;
+                if (miniGameChoice == "r") {
+                    stories -> intro();
+                }
+                else if (miniGameChoice == "q") {
+                    exit(0);
+                }
+                else{
+                    exit(0);
+                }
+            }
         }
         else{
             exit(0);

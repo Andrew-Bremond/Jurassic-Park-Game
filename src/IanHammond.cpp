@@ -247,7 +247,7 @@ void IanHammond::sceneThree() {
 
         if (choice2 == 1){
             cout << "GAME OVER: Ellie falls down a hole and meets her fate." << endl;
-            cout << "HINT: Make sure to walk down the stairs in the first place."
+            cout << "HINT: Make sure to walk down the stairs in the first place." << endl;
             dies();
         }
         else if (choice2 == 2){
