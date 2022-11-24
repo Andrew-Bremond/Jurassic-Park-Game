@@ -36,40 +36,11 @@ void Story::characterMenu(){
     cout << "Character menu: \n";
     cout << endl << "Welcome to the Character Menu \n";
     cout << "To select your character, input their number: \n";
-    cout << "For more character information, enter “0” \n" << endl;
+    cout << "For more character information, enter “0”" << endl;
+    cout << "Or press 5 to play a mini game \n" << endl; 
 
-    cout << "1. Dr. Alan Grant and kids\n 2. Dr. Ellie Sattler\n "
-    << "3. Dr. Ian Malcolm and John Hammond\n 4. Dennis Nedry\n";
-
-    int input = 0;
-
-    cin >> input;
-
-    // if(input == 2){
-    //     Ellie ellie;
-    //     ellie.setup();
-    // }
-
-    // if(input == 0)
-    // {
-    //     characterInfo();
-    // }
-    // else if (input == 1)
-    // {
-    //     AlanKids.setup();
-    // }
-    // else if(input == 2)
-    // {
-    //     Ellie.setup();
-    // }
-    // else if(input == 3)
-    // {
-    //     IanHammond.setup();
-    // }
-    // else if(input == 4)
-    // {
-    //     Nedry.setup();
-    // }
+    cout << "1. Dr. Alan Grant and kids\n2. Dr. Ellie Sattler\n"
+    << "3. Dr. Ian Malcolm and John Hammond\n4. Dennis Nedry\n";
 }
 
 void Story::characterInfo(){
