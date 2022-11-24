@@ -3,6 +3,11 @@
 #include "../header/Ellie.h"
 #include <iostream>
 
+Story::Story(){
+
+}
+
+
 void Story::movieDescription(){
 
     cout << "Hello! Welcome to our game \"Escape Jurassic Park\"\n";
@@ -27,7 +32,6 @@ void Story::movieDescription(){
     //return;
 }
 
-
 void Story::characterMenu(){
     cout << "Character menu: \n";
     cout << endl << "Welcome to the Character Menu \n";
@@ -41,10 +45,10 @@ void Story::characterMenu(){
 
     cin >> input;
 
-    if(input == 2){
-        Ellie *test = new Ellie();
-        test->setup();
-    }
+    // if(input == 2){
+    //     Ellie ellie;
+    //     ellie.setup();
+    // }
 
     // if(input == 0)
     // {

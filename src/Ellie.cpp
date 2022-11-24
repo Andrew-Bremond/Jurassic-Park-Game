@@ -44,6 +44,7 @@ void Ellie::sceneOne(){
             cout << "Game Over: you waited too long and the jeep is stuck "
             << "in deep mud from the rain, youre trying to get the jeep out of "
             << "the mud when a Dilophosaurus sees you and hunts you down. Its venom kills you!\n";
+            dies();
             //call dies()
         }
         else if (input2 == 2){

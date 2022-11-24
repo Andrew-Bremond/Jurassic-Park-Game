@@ -14,6 +14,7 @@ using namespace std;
 
 class Story {
 public:
+    Story();
     void movieDescription();
     void characterMenu();
     void characterInfo();
