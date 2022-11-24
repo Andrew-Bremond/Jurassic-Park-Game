@@ -144,6 +144,138 @@ void AlanKids::sceneOne(){
     }
 }
 
+//start of scene two:
+
+void AlanKids::sceneTwo(){
+    int input1;
+    cout << "The t-rex has flipped the jeep with the kids inside it. "
+    << "So after you lure it away, Ian takes over and brings the dinosaur "
+    << "even further away. You manage to get Lex out of the car when suddenly "
+    << "the trex comes back. After protecting yourself and Lex with the "
+    << "detached car door, you flee down the side of the road, clinging to "
+    << "the wire to not fall off the edge of the road. However the jeep with "
+    << "Tim inside gets thrown off the cliff.\n Do you:" << endl;
+
+    cout << "1. Hold onto the wire with lex and try to climb back up to the road.\n";
+    cout << "OR\n";
+    cout << "2. Descend with lex to go and find the jeep.\n";
+    
+    cin >> input1;
+
+    cout << " \n------------------------------\n";
+
+    //option one choice:
+    if (input1 == 1){
+        int input2;
+        cout << "You climb back up to the road but the t-rex hasn't left. Your next move is... " << endl;
+        cout << "1. Stop moving, hope it doesn't see your movements.\n";
+        cout << "Or\n";
+        cout << "2. Try and sneak by, staying out of its sight. \n";
+        cin >> input2;
+        cout << " \n------------------------------\n";
+        cout << endl;
+        if (input2 == 1){
+            cout << "Game Over: You freeze but luck is against you when the t-rex catches "
+            << "your scent. You're dino dinner.\n";
+            dies();
+            
+        }
+        else if (input2 == 2){
+            cout << "Game Over: The t-rex turns around and sees you both sneaking, you're now a dino snack.\n";
+            dies();
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    } //option two choice:
+    else if (input1 == 2){
+        cout << "You descend to the jungle floor with Lex. Following the car smoke "
+        << "you find Tim and the car in the top of a tree.\n Do you…" << endl;
+
+        int input3;
+        cout << "1. Climb the tree to save Tim even though its at the top" << endl;
+        cout << "Or" << endl;
+        cout << "2. Try and talk to Tim to get him to climb down to safety/you\n";
+        cin >> input3;
+        cout << " \n------------------------------\n";
+        cout << endl;
+
+        if (input3 == 2){
+            cout << "As you talk to Tim, the car shifts and crashes to the floor, Tim still inside.\n";
+            cout << "Game Over: You've failed to keep the kids safe, they are top priority! \n";
+            dies();
+            
+        }
+        else if (input3 == 1){
+            cout << "You manage to get to Tim and the car in the tree. As you reach to "
+            << "get Tim, you bump the steering wheel and the car shifts, it starts "
+            << "to fall. \n Do you... \n";
+            cout << endl;
+
+            int input5;
+            cout << "1. Hold out a vine for Tim to grab.\n";
+            cout << "Or" << endl;
+            cout << "2. Reach down unsteadily and grab Tim. \n";
+            cin >> input5;
+            cout << " \n------------------------------\n";
+            cout << endl;
+
+            if (input5 == 1){
+                cout << "Game Over: The vine breaks! Tim falls with the car. \n";
+                dies();
+            }
+            else if (input5 == 2){
+                int input6;
+
+                cout << "You manage to grab Tim as the car falls. You climb back down to safety. Its now becoming night, do you:\n";
+                
+                cout << "1. Try to make your way back to the road to find your way to the buildings.\n";
+                cout << "Or\n";
+                cout << "2. Try to find a safe place to sleep for the night. \n";
+                cin >> input6;
+                cout << " \n------------------------------\n";
+                cout << endl;
+                
+                if (input6 == 1){
+                    cout << "Game Over: Traveling by foot at night is dangerous and you don't see the dinosaurs as they come up and eat you!";
+                    dies();
+                }
+                else if (input6 == 2){
+                    cout << "You find a tree to climb into with Lex and Tim. You stay "
+                    << "up and keep watch, safe and sound for the night. In the morning "
+                    << "you climb down and try and make your way to the main buildings of the "
+                    << "park, but first you have to make it over the electric fence. Good luck!\n";
+                    cout << "\n------------------------------\n";
+                    sceneThree();
+                }
+                else {
+                    cout << "invalid input, exiting game" << endl;
+                    exit(0);
+                }
+            }
+            else {
+                cout << "invalid input, exiting game" << endl;
+                exit(0);
+            }
+        }
+        else {
+            cout << "invalid input, exiting game" << endl;
+            exit(0);
+        }
+    }
+    else {
+        cout << "invalid input, exiting game" << endl;
+        exit(0);
+    }
+}
+
+
+
+
+
+//end of scene two
+
 void AlanKids::sceneThree(){
     int choice1;
     cout << "You see the huge electric fence with a warning sign of 10000 volts." << endl;
