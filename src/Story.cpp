@@ -92,6 +92,7 @@ void Story::intro(){
     }
     else{
         cout << "Sorry to see you go! \n";
+        exit(0);
     }
 
 }
