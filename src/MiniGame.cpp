@@ -2,7 +2,7 @@
 #include <string>
 
 MiniGame::MiniGame(){
-
+    
 }
 
 void MiniGame::Intro(){
