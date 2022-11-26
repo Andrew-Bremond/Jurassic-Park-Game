@@ -27,8 +27,8 @@ int main() {
         
         }
         if(input == 1){
-            // AlanKids *alankids = new AlanKids();
-            // alankids -> setup();
+            AlanKids *alankids = new AlanKids();
+            alankids -> setup();
         }
         else if(input == 2){
             Ellie *ellie = new Ellie();
