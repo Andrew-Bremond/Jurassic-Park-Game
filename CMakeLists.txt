@@ -4,6 +4,7 @@ project(MiniGameTestPortion)
 ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(minigametestExec
+  src/MiniGame.cpp
   test/MiniGameTest.cpp
 )
 
