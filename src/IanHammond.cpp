@@ -295,7 +295,7 @@ void IanHammond::sceneTwo(){
     int input1;
     cout << "Hammond (you) are sitting down eating icecream in the cafeteria. "
     << "You are surrounded by your life's work but you feel empty without your "
-    << "grandchildren. You are worried sick. Ellie Sattler ssits down with you do you:" << endl;
+    << "grandchildren. You are worried sick. Ellie Sattler sits down with you do you:" << endl;
 
     cout << "1. Start a conversation with her\n";
     cout << "OR\n";
@@ -353,7 +353,7 @@ void IanHammond::sceneTwo(){
 
             int input5;
             cout << "1. Talk about your flea circus that you made growing up and "
-            << "how its similar to Jurassic Park \n";
+            << "how it's similar to Jurassic Park \n";
             cout << "Or" << endl;
             cout << "2. Talk about how tight your shoes are on your feet \n";
             cin >> input5;
@@ -370,7 +370,7 @@ void IanHammond::sceneTwo(){
                 cout << "You continue on - rambling now about how the next dinosaur park "
                 << "will be better. Less mistakes. More real like the Flea circus. Ellie stops "
                 << "you and she yells at you. She states that your grandchildren lives "
-                << "are on the line. This isnt a game. You hear her. Your next move is:\n";
+                << "are on the line. This isn't a game. You hear her. Your next move is:\n";
                 int input6;
                 cout << "1. Agree with Ellie - and finish your ice cream\n";
                 cout << "Or" << endl;
@@ -414,4 +414,3 @@ void IanHammond::sceneTwo(){
     }
 }
 //end scene two
-

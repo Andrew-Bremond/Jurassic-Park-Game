@@ -1,4 +1,4 @@
-#include <gtest/gtest.h>
+#include "gtest/gtest.h"
 #include "../header/MiniGame.h"
 
 // DinoGenerator TESTS 
@@ -14,7 +14,7 @@ TEST(DinoGeneratorTest, DinoGenerator2){
 
 TEST(DinoGeneratorTest, DinoGenerator3){
     MiniGame *game = new MiniGame();
-    EXPECT_EQ(game -> DinoGenerator(3), "What dino's name means Swfit and Speedy theif: ");
+    EXPECT_EQ(game -> DinoGenerator(3), "What dino's name means Swift and Speedy thief: ");
 }
 
 TEST(DinoGeneratorTest, DinoGenerator4){
@@ -35,63 +35,63 @@ TEST(DinoGeneratorTest, DinoGenerator6){
 // VERIFICATION TESTS - lowercase
 TEST(DinoVerificationTestLowerCase, DinoVerification1){
     MiniGame *gm = new MiniGame();
-    EXPECT_EQ(gm -> Verifciation("t-rex", 1), true);
+    EXPECT_EQ(gm -> Verification("t-rex", 1), true);
 }
 
 TEST(DinoVerificationTestLowerCase, DinoVerification2){
     MiniGame *gm = new MiniGame();
-    EXPECT_EQ(gm -> Verifciation("triceratops", 2), true);
+    EXPECT_EQ(gm -> Verification("triceratops", 2), true);
 }
 
 TEST(DinoVerificationTestLowerCase, DinoVerification3){
     MiniGame *gm = new MiniGame();
-    EXPECT_EQ(gm -> Verifciation("velociraptor", 3), true);
+    EXPECT_EQ(gm -> Verification("velociraptor", 3), true);
 }
 
 TEST(DinoVerificationTestLowerCase, DinoVerification4){
     MiniGame *gm = new MiniGame();
-    EXPECT_EQ(gm -> Verifciation("brachiosaurus", 4), true);
+    EXPECT_EQ(gm -> Verification("brachiosaurus", 4), true);
 }
 
 TEST(DinoVerificationTestLowerCase, DinoVerification5){
     MiniGame *gm = new MiniGame();
-    EXPECT_EQ(gm -> Verifciation("stegosaurus", 5), true);
+    EXPECT_EQ(gm -> Verification("stegosaurus", 5), true);
 }
 
 TEST(DinoVerificationTestLowerCase, DinoVerification6){
     MiniGame *gm = new MiniGame();
-    ASSERT_EQ(gm -> Verifciation("", 1), false);
+    ASSERT_EQ(gm -> Verification("", 1), false);
 }
 
 // VERIFICATION TESTS - UpperCase
 TEST(DinoVerificationTestUpperCase, DinoVerification1){
     MiniGame *gm = new MiniGame();
-    EXPECT_EQ(gm -> Verifciation("T-rex", 1), true);
+    EXPECT_EQ(gm -> Verification("T-rex", 1), true);
 }
 
 TEST(DinoVerificationTestUpperCase, DinoVerification2){
     MiniGame *gm = new MiniGame();
-    EXPECT_EQ(gm -> Verifciation("Triceratops", 2), true);
+    EXPECT_EQ(gm -> Verification("Triceratops", 2), true);
 }
 
 TEST(DinoVerificationTestUpperCase, DinoVerification3){
     MiniGame *gm = new MiniGame();
-    EXPECT_EQ(gm -> Verifciation("Velociraptor", 3), true);
+    EXPECT_EQ(gm -> Verification("Velociraptor", 3), true);
 }
 
 TEST(DinoVerificationTestUpperCase, DinoVerification4){
     MiniGame *gm = new MiniGame();
-    EXPECT_EQ(gm -> Verifciation("Brachiosaurus", 4), true);
+    EXPECT_EQ(gm -> Verification("Brachiosaurus", 4), true);
 }
 
 TEST(DinoVerificationTestUpperCase, DinoVerification5){
     MiniGame *gm = new MiniGame();
-    EXPECT_EQ(gm -> Verifciation("Stegosaurus", 5), true);
+    EXPECT_EQ(gm -> Verification("Stegosaurus", 5), true);
 }
 
 TEST(DinoVerificationTestUpperCase, DinoVerification6){
     MiniGame *gm = new MiniGame();
-    ASSERT_EQ(gm -> Verifciation("", 1), false);
+    ASSERT_EQ(gm -> Verification("", 1), false);
 }
 
 

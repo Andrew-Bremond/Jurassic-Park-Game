@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 3.20)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
 project(MiniGameTestPortion)
 
 ADD_SUBDIRECTORY(googletest)
@@ -15,4 +15,3 @@ include_directories(
   ${CMAKE_SOURCE_DIR}/test/googletest/include/
   ${CMAKE_SOURCE_DIR}/test/googlemock/include/
 )
-
