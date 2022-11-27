@@ -53,7 +53,7 @@ int main() {
             cout << question << endl;
             cin >> answer;
             string miniGameChoice;
-            if(game -> Verifciation(answer, gameInput) == true){
+            if(game -> Verification(answer, gameInput) == true){
                 cout << "Congratulations you successfully answered the question!." << endl;
                 cout << "Would you like to play again 'r' or quit the game 'q'?" << endl;
                 cin >> miniGameChoice;

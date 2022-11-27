@@ -21,7 +21,7 @@ void Ellie::sceneOne(){
     << "appears, you want to go and help. The power is out and the dinosaur fences "
     << "are down, do you…" << endl;
 
-    cout << "1. Stay inside where is is nice and warm\n";
+    cout << "1. Stay inside where is nice and warm\n";
     cout << "OR\n";
     cout << "2. Go out to try and find the others in the storm. \n";
     
@@ -32,7 +32,7 @@ void Ellie::sceneOne(){
     //option one choice:
     if (input1 == 1){
         int input2;
-        cout << "You stay inside and watch the storm continue on. Theres no "
+        cout << "You stay inside and watch the storm continue on. There's no "
         << "sign of it calming down so you decide to… " << endl;
         cout << "1. Go out in a jeep yourself and try to find the others from the tour.\n";
         cout << "Or\n";
@@ -42,7 +42,7 @@ void Ellie::sceneOne(){
         cout << endl;
         if (input2 == 1){
             cout << "Game Over: you waited too long and the jeep is stuck "
-            << "in deep mud from the rain, youre trying to get the jeep out of "
+            << "in deep mud from the rain, you are trying to get the jeep out of "
             << "the mud when a Dilophosaurus sees you and hunts you down. Its venom kills you!\n";
             dies();
             
@@ -60,11 +60,11 @@ void Ellie::sceneOne(){
     } //option two choice:
     else if (input1 == 2){
         cout << "You arrive at the T-rex enclosure where the tour was last seen. "
-        << "Its a wreck, the fence is torn, the cars are ripped apart, and it is "
+        << "It's a wreck, the fence is torn, the cars are ripped apart, and it is "
         << "STILL dumping rain.\n" << endl;
 
         int input3;
-        cout << "You realise you have two choices. What do you pick?" << endl;
+        cout << "You realize you have two choices. What do you pick?" << endl;
         cout << "1. Look in the jeep wreckage on the road by the T-rex enclosure." << endl;
         cout << "Or" << endl;
         cout << "2. Walk down the road in hopes of finding Alan and the others nearby hiding and waiting. \n";
@@ -89,8 +89,8 @@ void Ellie::sceneOne(){
                 dies();
             }
             else if (input4 == 2){
-                cout << "Game Over: The t-rex isnt the only dangerous dinosaurs at the "
-                << "park. The Dilong dinosaur was right behind the bush and waited "
+                cout << "Game Over: The t-rex isn't the only dangerous dinosaurs at the "
+                << "park. The dinosaur was right behind the bush and waited "
                 << "for you to sit down before taking a big bite!\n";
                 dies();
             }
@@ -100,7 +100,7 @@ void Ellie::sceneOne(){
             }
         }
         else if (input3 == 1){
-            cout << "You look in the jeep, no sign of Alan but there are foot prints "
+            cout << "You look in the jeep, no sign of Alan but there are footprints "
             << "along with children footprints, they must be Hammond’s grandchildren. You hear "
             << "yelling from behind you on the road. \n";
             cout << "From here do you..." << endl;
@@ -116,7 +116,7 @@ void Ellie::sceneOne(){
 
             if (input5 == 2){
                 int input6;
-                cout << "The foot steps take you further into the bush when you hear a "
+                cout << "The footsteps take you further into the bush when you hear a "
                 << "noise like someone walking. Do you... \n";
                 cout << "1. Run towards the noise (It might be Alan!).\n";
                 cout << "Or\n";
@@ -125,7 +125,7 @@ void Ellie::sceneOne(){
                 cout << " \n------------------------------\n";
                 cout << endl;
                 if (input6 == 1){
-                    cout << "Game Over: That was not alan. You just ran into the raptors. Thanks for feeding them!\n";
+                    cout << "Game Over: That was not Alan. You just ran into the raptors. Thanks for feeding them!\n";
                     dies();
                 }
                 else if (input6 == 2){
@@ -164,9 +164,9 @@ void Ellie::sceneOne(){
 void Ellie::sceneTwo (){
 //sceneTwo starts here
 //need to add the dies and lives funtion
-    cout << "After drivin Ian to safety- the power goes out at the parks buildings. "
-    << "In order to get in contaact with those still out in the storm, you need to get "
-    << "the power/phones back on. You voulenteer to go to the power shed. After an intense "
+    cout << "After driven Ian to safety- the power goes out at the parks buildings. "
+    << "In order to get in contact with those still out in the storm, you need to get "
+    << "the power/phones back on. You volunteer to go to the power shed. After an intense "
     << "run, you make it into the shed and switch the power lever on...\n";
 
     cout << "\n------------------------------\n";
@@ -184,7 +184,7 @@ void Ellie::sceneTwo (){
         int choice2;
         cout << "You successfully close the door, but the fenced door is not enough to keep it closed. All of a sudden, you see Ray's arm land on your shoulder. " 
         << "You thought it was Ray's arm, but you didn't see a body attached to it. With the raptor biting through the fence you... \n"
-        << "1. Throw the arm at the raptor and run away. \n2. Lean against the the fenced door." << endl;
+        << "1. Throw the arm at the raptor and run away. \n2. Lean against the fenced door." << endl;
         cin >> choice2;
         cout << " \n------------------------------\n";
         cout << endl;
@@ -428,12 +428,12 @@ void Ellie::sceneFour(){
 
     if(input1 == 1){
         int input2;
-        cout << "You move the great aside and and climb onto the scaffolding adjacent to the T-rex skele"
+        cout << "You move the great aside and climb onto the scaffolding adjacent to the T-rex skeleton"
         "tons. Just then a velociraptor appears on the second floor, the same height you are on the scaffolding. Do you . . ." << endl;
         cout << "1. Climb back up the scaffolding into the vents to escape." << endl;
         cout << "Or" << endl;
         cout << "2. Leap over the scaffolding and climb down the skeleton of the "
-        "suspended T-rex inorder to get you, Grant, and the children to the ground. " << endl;
+        "suspended T-rex in order to get you, Grant, and the children to the ground. " << endl;
         cin >> input2;
         cout << " \n------------------------------\n";
         cout << endl;
@@ -501,7 +501,7 @@ void Ellie::sceneFour(){
     else if(input1 == 2){
         int input5;
         cout << "You run for 100 yards down the vent until you reach a large spinning fan. You can’t get through. Do you . . ." << endl;
-        cout << "1. Turn around and try and hed back to the previous vent." << endl;
+        cout << "1. Turn around and try and head back to the previous vent." << endl;
         cout << "Or" << endl;
         cout << "2. Run through the fan and take your chances with physics." << endl;
         cin >> input5;

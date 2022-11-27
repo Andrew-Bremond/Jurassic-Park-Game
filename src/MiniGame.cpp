@@ -21,7 +21,7 @@ string MiniGame::DinoGenerator(int numInput){
     }
     // Velociraptor 
     else if(numInput == 3){
-        return "What dino's name means Swfit and Speedy theif: ";
+        return "What dino's name means Swift and Speedy thief: ";
     }
     // Brachiosaurus 
     else if(numInput == 4){
@@ -34,7 +34,7 @@ string MiniGame::DinoGenerator(int numInput){
     return "";
 }
 
-bool MiniGame::Verifciation(string choice, int numInput){
+bool MiniGame::Verification(string choice, int numInput){
     if(numInput == 1 && (choice == "T-rex" || choice == "t-rex")){
         return true;
     }

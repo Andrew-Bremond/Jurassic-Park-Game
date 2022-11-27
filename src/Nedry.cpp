@@ -35,7 +35,7 @@ void Nedry::sceneOne(){
             dies();
         }
         else if (val2 == 2){
-            cout << "Game Over: You aren't as fast as you think and your coworkers watch you go into the cold starage room and arrest you." << endl;
+            cout << "Game Over: You aren't as fast as you think and your coworkers watch you go into the cold storage room and arrest you." << endl;
             dies();
         }
         else {
@@ -131,7 +131,7 @@ void Nedry::sceneOne(){
 void Nedry::sceneThree(){
     int choice1;
     cout << "You're getting closer to escaping the Park and you see the large wooden doors leading to the exit..." << endl;
-    cout << "1. Flip the switch that's by the gate (maunal override)" << endl;
+    cout << "1. Flip the switch that's by the gate (manual override)" << endl;
     cout << "2. Run through the gate you with your jeep." << endl;
     cin >> choice1;
     cout << " \n------------------------------\n";
@@ -265,7 +265,7 @@ void Nedry::sceneTwo(){
             dies();
         }
         else if (input2 == 1){
-            cout << "Game Over: You walk down twards the jeeps but had forgotten "
+            cout << "Game Over: You walk down towards the jeeps but had forgotten "
             << "about the security camera in the other parts of the buildings. "
             << "You go down a hallway that still has its cameras on and is caught. \n";
             dies();
@@ -317,13 +317,13 @@ void Nedry::sceneTwo(){
             int input5;
             cout << "1. Go look in the kitchen, you could use a snack for on the road.\n";
             cout << "Or" << endl;
-            cout << "2. Continue speed walking down th hallway worred about time. \n";
+            cout << "2. Continue speed walking down the hallway worried about time. \n";
             cin >> input5;
             cout << " \n------------------------------\n";
             cout << endl;
 
             if (input5 == 1){
-                cout << "Game Over: Your snack break took too long, it would be impossible to drive to the boat ontime. \n";
+                cout << "Game Over: Your snack break took too long, it would be impossible to drive to the boat on time. \n";
                 dies();
             }
             else if (input5 == 2){
@@ -412,7 +412,7 @@ void Nedry::sceneFour(){
                 "Instead it spits acid like liquid on your face. He blinds you and kills you." << endl;
                 cout << "Though this is what happens in the movie, stealing is never "
                 "tolerated and punishment will be inflicted - by dinos" << endl;
-                cout << "Congrats you've reached the end of the villan's story." << endl;
+                cout << "Congrats you've reached the end of the villain's story." << endl;
                 
             }
             else if(input4 == 2){

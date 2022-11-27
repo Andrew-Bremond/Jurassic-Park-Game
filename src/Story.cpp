@@ -1,6 +1,5 @@
 //story.cpp
-//#include "../header/Story.h"
-#include "../header/Ellie.h"
+#include "../header/Story.h"
 #include <iostream>
 
 Story::Story(){
@@ -96,3 +95,9 @@ void Story::intro(){
     }
 
 }
+
+// int main(){
+//     movieDescription();
+//     characterMenu();
+//     return 0;
+// }

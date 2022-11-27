@@ -50,7 +50,7 @@ void AlanKids::sceneOne(){
                 dies();
             }
             else if(input3 == 2){
-                cout << "Game Over: This attempt to blind a dinosaur was really innefective and resulted in death" << endl;
+                cout << "Game Over: This attempt to blind a dinosaur was really ineffective and resulted in death" << endl;
                 dies();
             }
             else {
@@ -70,7 +70,7 @@ void AlanKids::sceneOne(){
             cout << endl;
 
             if(input4 == 1){
-                cout << "You make the heroic decision to put the kids life before your own and save them successfully. "
+                cout << "You make the heroic decision to put the kid's life before your own and save them successfully. "
                 "The car is thrown off road by the T-rex and you escape down from the road. " << endl;
                 sceneTwo();
             }
@@ -151,7 +151,7 @@ void AlanKids::sceneTwo(){
     cout << "The t-rex has flipped the jeep with the kids inside it. "
     << "So after you lure it away, Ian takes over and brings the dinosaur "
     << "even further away. You manage to get Lex out of the car when suddenly "
-    << "the trex comes back. After protecting yourself and Lex with the "
+    << "the t-rex comes back. After protecting yourself and Lex with the "
     << "detached car door, you flee down the side of the road, clinging to "
     << "the wire to not fall off the edge of the road. However the jeep with "
     << "Tim inside gets thrown off the cliff.\n Do you:" << endl;
@@ -194,7 +194,7 @@ void AlanKids::sceneTwo(){
         << "you find Tim and the car in the top of a tree.\n Do you…" << endl;
 
         int input3;
-        cout << "1. Climb the tree to save Tim even though its at the top" << endl;
+        cout << "1. Climb the tree to save Tim even though it's at the top" << endl;
         cout << "Or" << endl;
         cout << "2. Try and talk to Tim to get him to climb down to safety/you\n";
         cin >> input3;
@@ -228,7 +228,7 @@ void AlanKids::sceneTwo(){
             else if (input5 == 2){
                 int input6;
 
-                cout << "You manage to grab Tim as the car falls. You climb back down to safety. Its now becoming night, do you:\n";
+                cout << "You manage to grab Tim as the car falls. You climb back down to safety. It's now becoming night, do you:\n";
                 
                 cout << "1. Try to make your way back to the road to find your way to the buildings.\n";
                 cout << "Or\n";
@@ -366,7 +366,7 @@ void AlanKids::sceneThree(){
 
         if (choice2 == 1){
             cout << "GAME OVER: The climbing is slow due to the gloomy ambiance." << endl;
-            cout << "The electricity comes back on earlier that expected and gets the best of you." << endl;
+            cout << "The electricity comes back on earlier than expected and gets the best of you." << endl;
             cout << "HINT: Play the joke." << endl;
             dies();
         }
@@ -382,7 +382,7 @@ void AlanKids::sceneThree(){
     }
     else if (choice1 == 3){
         int choice2;
-        cout << "You don't need kids. You climb the fence as fast as possible and ran somewehere far away." << endl;
+        cout << "You don't need kids. You climb the fence as fast as possible and ran somewhere far away." << endl;
         cout << "1. Take a random jeep and drive off" << endl;
         cout << "2. Conquer your fear and ride a dinosaur to victory." << endl;
         cin >> choice2;
@@ -390,13 +390,13 @@ void AlanKids::sceneThree(){
         cout << endl;
 
         if (choice2 == 1){
-            cout << "GAME OVER: There is no nearby functional jeep and a dinosaur catches you offguard." << endl;
-            cout << "HINT: Don't abadon the kids." << endl;
+            cout << "GAME OVER: There is no nearby functional jeep and a dinosaur catches you off-guard." << endl;
+            cout << "HINT: Don't abandon the kids." << endl;
             dies();
         }
         else if (choice2 == 2){
             cout << "GAME OVER: That was pretty silly. You got eaten." << endl;
-            cout << "HINT: Don't abadon the kids." << endl;
+            cout << "HINT: Don't abandon the kids." << endl;
             dies();
         }
         else {

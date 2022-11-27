@@ -10,7 +10,7 @@ class MiniGame{
     MiniGame();
     void Intro();
     string DinoGenerator(int n);
-    bool Verifciation(string choice, int numChoice);
+    bool Verification(string choice, int numChoice);
 };
 
 #endif
