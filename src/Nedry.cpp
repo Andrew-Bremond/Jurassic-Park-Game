@@ -413,7 +413,20 @@ void Nedry::sceneFour(){
                 cout << "Though this is what happens in the movie, stealing is never "
                 "tolerated and punishment will be inflicted - by dinos" << endl;
                 cout << "Congrats you've reached the end of the villain's story." << endl;
-                
+                cout << "Press 'r' to start over " << endl;
+                cout << "or " << endl;
+                cout << "Press any character to quit the game" << endl;
+                cout << endl;
+                cin >> choice;
+                cout << endl;
+
+                if (choice == "r") {
+                    intro();
+                }
+                else {
+                    cout << "Exiting Game..." << endl;
+                    exit(0);
+                }
             }
             else if(input4 == 2){
                 cout << "Game Over: You trigger the dinosaurs' predatory instincts and he chases you down and rips out your neck." << endl;
