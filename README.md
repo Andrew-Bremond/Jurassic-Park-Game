@@ -14,7 +14,8 @@
 
 ## Class Diagram
 
-![UML Jurrasic Park](https://user-images.githubusercontent.com/104599718/200188446-9a450d11-a293-42f4-bae4-f3ca039b8aec.jpg)
+
+![UML Jurrasic Park](https://user-images.githubusercontent.com/104599718/204114655-1fd078cf-d314-4b41-9755-7656fbcd12e8.jpg)
 
 
 > The UML Diagram shows all our classes.
