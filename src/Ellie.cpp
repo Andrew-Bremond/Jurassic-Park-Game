@@ -218,13 +218,14 @@ void Ellie::sceneTwo (){
         else if (choice2 == 2){
             int choice3;
             cout << "Your leg gets injured but you manage to run away through the bunker door. Now that you're safe you decide to go and meet up with... "
-            <<"\n1. Alan \n2.Muldoon" << endl;
+            <<"\n1. Alan \n2. Muldoon" << endl;
             cin >> choice3;
             cout << " \n------------------------------\n";
             cout << endl;
 
             if (choice3 == 1){
                 cout << "Good Job. You managed to survive the second scene, but are you ready for the next ones?" << endl;
+                sceneThree();
             }
             else if (choice3 == 2){
                 cout << "GAME OVER: You discover that Muldoon got eaten, and you are next." << endl;
@@ -396,6 +397,7 @@ void Ellie::sceneThree(){
             else if (val5 == 2){
                 cout << "You, Alan, and the kids are in the vents. However, both raptors are now after you." << endl;
                 cout << "The raptors are still on your tail." << endl;
+                sceneFour();
             }
             else {
                 cout << "invalid input, exiting game" << endl;
