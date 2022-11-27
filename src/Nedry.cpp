@@ -408,6 +408,7 @@ void Nedry::sceneFour(){
             cout << endl;
 
             if(input4 == 1){
+                string choice;
                 cout << "The dinosaur is not a dog and didn't fall for your trick. "
                 "Instead it spits acid like liquid on your face. He blinds you and kills you." << endl;
                 cout << "Though this is what happens in the movie, stealing is never "
