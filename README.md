@@ -21,37 +21,34 @@
 
 > The UML Diagram shows all our classes.
 > 
-> Main class:
+> Main.cpp:
 > 
 > No job other than to call Story class
 > 
 > Story class:
 > 
-> * Function one: movieDescription() will output the text description of the first half of the movie.
-> * Function two: characterMenu() will output the character selection menu with a list of the playable characters. 
-> * Function three: characterInfo() will output character descriptions to help the user select their character. 
+> * Function one: Story() Constructor for story class.
+> * Function two: Intro() Display "Welcome to Jurassic Park" screen; start screen for game.
+> * Function three: movieDescription() Outputs the text description of the first half of the movie.
+> * Function four: characterMenu() Outputs the character selection menu with a list of the playable characters. 
+> * Function five: characterInfo() Outputs character descriptions to help the user select their character. 
 > 
 > Character class:
-> * Function one: getInfo() output characters job and specialty. 
-> * Function two: dies() output dies message and the option to restart game or quit. Will be called from each inherited class when that player dies.
-> * Function three: lives() will output ending of movie for closure of the game. 
+> * Function one: dies() Outputs "dies message" and the option to restart the game or quit. Will be called from each inherited class when that player dies.
+> * Function two: lives() Outputs ending of movie for closure of the game when user survives the game. Will be called from each inherited class when that player lives.
 > 
 > For each person class:
 > 
-> Each function will be a scene from the movie, with 4 total scenes per person. Here is where the main coding will be with the storylines written out with user input. 
+> Each function will be a scene from the movie, with 4 total scenes per person (IanHammond class has three scenes). Here is where the main coding is with the storylines written out with user input. 
+
+> MiniGame class:
+> * Function one: MiniGame() Constructor for MiniGame class.
+> * Function two: Intro() Display instructions for the mini game.
+> * Function three: DinoGenerator() Outputs the questions of the mini game. return type is a string with the question.
+> * Function four: Verification() Checks the user answer to the MiniGame questions. Return type is bool.
 
 
 
-
-
- 
- > ## Final deliverable
- > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
- 
  ## Screenshots
 > ScreenShot 1: Ellie character chosen, full run of game surviving.
  ><img width="1204" alt="Screenshot1" src="https://user-images.githubusercontent.com/114311963/204415776-18fa5e20-cc55-4daf-bcb9-8bc082df2668.png">
