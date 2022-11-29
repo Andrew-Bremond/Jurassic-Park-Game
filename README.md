@@ -66,5 +66,5 @@
  ## Installation/Usage
  > Instructions on installing and running your application
  ## Testing
- > The project was tested by using two methods of testing. The first was using googletest to unit test functions that returned values. This was primarily used for the mini game that the user has the option to play. Using googletest, we tested the return values based on different possible inputs that a user may enter. The second was we tested the program was by running the program over and over running through each path to make sure that the correct functions were called and executed based on user input.
+ > The project was tested by using three methods of testing. The first was using googletest to unit test functions that returned values. This was primarily used for the mini game that the user has the option to play. Using googletest, we tested the return values based on different possible inputs that a user may enter. The second was we tested the program was by running the program over and over running through each path to make sure that the correct functions were called and executed based on user input. The last way that we tested the program was using vlagrind. We ran valgrind on the program to make sure that the program had no memory leaks after executing.
  
