@@ -58,9 +58,15 @@
 > ScreenShot 2: Ellie character chosen, however this time you die at the first branch.
  ><img width="1199" alt="Screenshot5" src="https://user-images.githubusercontent.com/114311963/204415865-76385789-f694-4a7f-aa7c-08a2c6ed80c0.png">
  ><img width="190" alt="Screenshot6" src="https://user-images.githubusercontent.com/114311963/204415880-8323bbed-8b7e-494a-a1b9-bb2f3d6ba422.png">
+ >
 > ScreenShot 3: MiniGame, first part is when answer is correct and second part has the wrong answer.
  >![Screenshot7](https://user-images.githubusercontent.com/114311963/204666084-aec28b74-d535-4b45-9e01-e426ce046693.png)
  >![Screenshot8](https://user-images.githubusercontent.com/114311963/204666099-cda7e82e-6be8-49e1-854d-6f2fd1cb2212.png)
+ > ScreenShot 4: Character selection menu:
+ <img width="795" alt="Screen Shot 2022-11-29 at 3 42 51 PM" src="https://user-images.githubusercontent.com/104599718/204672904-666a99fd-c7e4-4eee-9b07-0a9155723ec6.png">
+>ScreenShot 5: Character info page:
+<img width="1132" alt="Screen Shot 2022-11-29 at 3 44 13 PM" src="https://user-images.githubusercontent.com/104599718/204672961-754b95db-7a17-4fcb-bf3a-88f2e1c36363.png">
+
 
 
  ## Installation/Usage
