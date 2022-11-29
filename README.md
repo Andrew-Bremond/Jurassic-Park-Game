@@ -64,7 +64,7 @@
  >![Screenshot8](https://user-images.githubusercontent.com/114311963/204666099-cda7e82e-6be8-49e1-854d-6f2fd1cb2212.png)
  > ScreenShot 4: Character selection menu:
  <img width="795" alt="Screen Shot 2022-11-29 at 3 42 51 PM" src="https://user-images.githubusercontent.com/104599718/204672904-666a99fd-c7e4-4eee-9b07-0a9155723ec6.png">
->ScreenShot 5: Character info page:
+> ScreenShot 5: Character info page:
 <img width="1132" alt="Screen Shot 2022-11-29 at 3 44 13 PM" src="https://user-images.githubusercontent.com/104599718/204672961-754b95db-7a17-4fcb-bf3a-88f2e1c36363.png">
 
 
