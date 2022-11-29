@@ -15,7 +15,8 @@
 ## Class Diagram
 
 
-![UML Jurrasic Park](https://user-images.githubusercontent.com/104599718/204114655-1fd078cf-d314-4b41-9755-7656fbcd12e8.jpg)
+<img width="1011" alt="UML_Final jpg" src="https://user-images.githubusercontent.com/104599718/204416538-c1de2781-bb29-4e65-9654-281fc08ed203.png">
+
 
 
 > The UML Diagram shows all our classes.
@@ -62,12 +63,13 @@
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+> ScreenShot 1: Ellie character chosen, full run of game surviving.
  ><img width="1204" alt="Screenshot1" src="https://user-images.githubusercontent.com/114311963/204415776-18fa5e20-cc55-4daf-bcb9-8bc082df2668.png">
  ><img width="1208" alt="Screenshot2" src="https://user-images.githubusercontent.com/114311963/204415817-fcc607a7-6e16-456c-9004-91422cad9a75.png">
  ><img width="1193" alt="Screenshot3" src="https://user-images.githubusercontent.com/114311963/204415830-43d2c361-6176-42ed-b806-b60f682616aa.png">
  ><img width="931" alt="Screenshot4" src="https://user-images.githubusercontent.com/114311963/204415848-1761b072-b67b-468c-a0d3-505471a6af77.png">
- ><img width="1199" alt="Screenshot5" src="https://user-images.githubusercontent.com/114311963/204415865-76385789-f694-4a7f-aa7c-08a2c6ed80c0.png">
+>ScreenShot 2: Ellie character chosen, however this time you die at the first branch.
+><img width="1199" alt="Screenshot5" src="https://user-images.githubusercontent.com/114311963/204415865-76385789-f694-4a7f-aa7c-08a2c6ed80c0.png">
  ><img width="190" alt="Screenshot6" src="https://user-images.githubusercontent.com/114311963/204415880-8323bbed-8b7e-494a-a1b9-bb2f3d6ba422.png">
  >
  ## Installation/Usage
@@ -76,5 +78,5 @@
  > `g++ src/Character.cpp src/Story.cpp main.cpp src/Ellie.cpp src/Nedry.cpp src/IanHammond.cpp src/MiniGame.cpp src/AlanKids.cpp`
  > `./a.out`
  ## Testing
- > The project was tested by using three methods of testing. The first was using googletest to unit test functions that returned values. This was primarily used for the mini game that the user has the option to play. Using googletest, we tested the return values based on different possible inputs that a user may enter. The second was we tested the program was by running the program over and over running through each path to make sure that the correct functions were called and executed based on user input. The last way that we tested the program was using vlagrind. We ran valgrind on the program to make sure that the program had no memory leaks after executing.
+ > The project was tested by using three methods of testing. The first was using Googletest to unit test functions that returned values. This was primarily used for the mini game that the user has the option to play. Using Googletest, we tested the return values based on different possible inputs that a user may enter. The second was we tested the program was by running the program over and over running through each path to make sure that the correct functions were called and executed based on user input. We repeated this for each character. The last way that we tested the program was using Valgrind. We ran Valgrind on the program to make sure that the program had no memory leaks after executing.
  
