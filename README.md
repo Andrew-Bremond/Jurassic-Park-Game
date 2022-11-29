@@ -66,6 +66,5 @@
  ## Installation/Usage
  > Instructions on installing and running your application
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  > The project was tested by using two methods of testing. The first was using googletest to unit test functions that returned values. This was primarily used for the mini game that the user has the option to play. Using googletest, we tested the return values based on different possible inputs that a user may enter. The second was we tested the program was by running the program over and over running through each path to make sure that the correct functions were called and executed based on user input.
  
