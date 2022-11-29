@@ -74,6 +74,7 @@
  >
  ## Installation/Usage
  > To run and play the game. First clone the repository of the project. (This repo) and run the following compilation line. and then run ./a.out.
+ > The game itself has instructions as you play but in breif, it tests the user's knowledge on the movie Jurassic Park by seeing if they can remember and follow the plot of the movie. Users will be prompted to select what they think is the correct answer.
  > 
  > `g++ src/Character.cpp src/Story.cpp main.cpp src/Ellie.cpp src/Nedry.cpp src/IanHammond.cpp src/MiniGame.cpp src/AlanKids.cpp`
  > `./a.out`
